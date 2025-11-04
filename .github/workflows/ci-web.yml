@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: 24.4.1 # synced with devenv
           cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
 
       - run: cd web && pnpm install
 
