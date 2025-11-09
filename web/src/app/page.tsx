@@ -379,6 +379,21 @@ export default async function Home() {
                     </a>
                 </div>
             </section>
+
+            {/* todo: re-enable
+            <section className="mt-12 mb-16 border-slate-200">
+                <div className="mx-auto max-w-2xl text-center">
+                    <h3 className="mb-2 text-2xl font-bold text-slate-900">
+                        Stay Updated
+                    </h3>
+                    <p className="mb-6 text-slate-600">
+                        Get notified about product launches, updates, and
+                        exclusive offers.
+                    </p>
+                    <MailingListForm variant="compact" source="homepage" />
+                </div>
+            </section>
+            */}
         </div>
     )
 }
