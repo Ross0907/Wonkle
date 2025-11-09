@@ -38,10 +38,10 @@ We are working hard to get the first prototype of the board so we can iterate on
 it until we have the final product.
 
 [discord]: https://discord.gg/h27rwcBn73
-[opencollective]: https://opencollective.com/pompyboard
-[license]: https://github.com/pompyboard/pompyboard/blob/master/LICENSE
-[faq]: https://github.com/pompyboard/pompyboard/blob/master/FAQ.md
-[contributing]: https://github.com/pompyboard/pompyboard/blob/master/CONTRIBUTING.md
+[opencollective]: https://opencollective.com/wonkle
+[license]: https://github.com/wonkleio/wonkle/blob/master/LICENSE
+[faq]: https://github.com/wonkleio/wonkle/blob/master/FAQ.md
+[contributing]: https://github.com/wonkleio/wonkle/blob/master/CONTRIBUTING.md
 [cth480]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B15
 [ctl472]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B18
 [ptk470]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B65
