@@ -73,6 +73,19 @@ export default function Footer() {
                             />
                         </Link>
                         <Link
+                            title="Follow us on BlueSky"
+                            href="https://bsky.app/profile/wonkle.io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-[#1185FE] hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7FADF2]"
+                            aria-label="BlueSky"
+                        >
+                            <Icon
+                                icon="simple-icons:bluesky"
+                                className="h-5 w-5"
+                            />
+                        </Link>
+                        <Link
                             title="View source code on GitHub"
                             href="https://github.com/wonkleio/wonkle"
                             target="_blank"
