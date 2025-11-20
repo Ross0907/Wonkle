@@ -39,9 +39,9 @@ it until we have the final product.
 
 [discord]: https://discord.gg/h27rwcBn73
 [opencollective]: https://opencollective.com/wonkle
-[license]: https://github.com/wonkleio/wonkle/blob/master/LICENSE
-[faq]: https://github.com/wonkleio/wonkle/blob/master/FAQ.md
-[contributing]: https://github.com/wonkleio/wonkle/blob/master/CONTRIBUTING.md
+[license]: https://github.com/wonkleio/wonkle/blob/dev/LICENSE
+[faq]: https://github.com/wonkleio/wonkle/blob/dev/FAQ.md
+[contributing]: https://github.com/wonkleio/wonkle/blob/dev/CONTRIBUTING.md
 [cth480]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B15
 [ctl472]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B18
 [ptk470]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B65

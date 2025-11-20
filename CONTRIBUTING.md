@@ -26,8 +26,8 @@ Our projects can be roughly broken down into 5 parts:
 
 - There are three major branches:
   - `dev` - open Pull Requests here
-  - `staging` - testing before production
-  - `master` - production
+  - `web-staging` - testing website before production
+  - `web-prod` - production website
 - For OpenTabletDriver, follow their [`CONTRIBUTING.md`][otd-contrib].
 
 ## Contribution standards
@@ -73,4 +73,4 @@ For example:
 <!-- Links -->
 
 [otd-fork]: https://github.com/wonkleio/OpenTabletDriver
-[otd-contrib]: https://github.com/OpenTabletDriver/OpenTabletDriver/blob/master/CONTRIBUTING.md
+[otd-contrib]: https://github.com/OpenTabletDriver/OpenTabletDriver/blob/dev/CONTRIBUTING.md
