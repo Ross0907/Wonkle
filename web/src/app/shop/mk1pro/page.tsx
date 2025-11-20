@@ -341,7 +341,6 @@ export default async function Mk1ProPage() {
                     >
                         <Icon icon="simple-icons:discord" className="h-5 w-5" />
                         Join Discord Community
-                        <Icon icon="mdi:open-in-new" className="h-4 w-4" />
                     </a>
                 </div>
             </section>
