@@ -40,7 +40,7 @@ export default async function Home() {
                             >
                                 Join our Community
                                 <Icon
-                                    icon="fa-brands:discord"
+                                    icon="simple-icons:discord"
                                     className="ml-2 h-5 w-5"
                                 />
                             </a>
@@ -373,7 +373,7 @@ export default async function Home() {
                     >
                         Join our Community
                         <Icon
-                            icon="fa-brands:discord"
+                            icon="simple-icons:discord"
                             className="ml-2 h-5 w-5"
                         />
                     </a>

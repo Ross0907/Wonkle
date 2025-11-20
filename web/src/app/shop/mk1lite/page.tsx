@@ -338,7 +338,7 @@ export default async function Mk1LitePage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 rounded-full bg-[#5865F2] px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#4752C4] hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"
                     >
-                        <Icon icon="fa-brands:discord" className="h-5 w-5" />
+                        <Icon icon="simple-icons:discord" className="h-5 w-5" />
                         Join Discord Community
                         <Icon icon="mdi:open-in-new" className="h-4 w-4" />
                     </a>
