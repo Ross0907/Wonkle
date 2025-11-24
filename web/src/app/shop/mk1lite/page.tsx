@@ -13,7 +13,7 @@ export default async function Mk1LitePage() {
     return (
         <div className="w-full">
             {/* Hero Section - Lead with value proposition */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 px-4 pt-8 pb-4">
+            <section className="relative overflow-hidden bg-linear-to-br from-slate-50 via-blue-50 to-purple-50 px-4 pt-8 pb-4">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-8">
                         <Link
@@ -83,7 +83,7 @@ export default async function Mk1LitePage() {
                     </div>
                 </div>
 
-                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-gradient-to-br from-slate-100 via-blue-50 to-transparent opacity-60 blur-3xl" />
+                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-linear-to-br from-slate-100 via-blue-50 to-transparent opacity-60 blur-3xl" />
             </section>
 
             {/* Benefits first - emotion before specs */}
@@ -99,7 +99,7 @@ export default async function Mk1LitePage() {
                     </div>
 
                     <div className="grid gap-8 lg:grid-cols-3">
-                        <div className="group rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-linear-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-blue-600 p-3">
                                 <Icon
                                     icon="mdi:speedometer"
@@ -118,7 +118,7 @@ export default async function Mk1LitePage() {
                             </p>
                         </div>
 
-                        <div className="group rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100/50 p-8 transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-linear-to-br from-purple-50 to-purple-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-purple-600 p-3">
                                 <Icon
                                     icon="mdi:target-variant"
@@ -138,7 +138,7 @@ export default async function Mk1LitePage() {
                             </p>
                         </div>
 
-                        <div className="group rounded-2xl bg-gradient-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-linear-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-green-600 p-3">
                                 <Icon
                                     icon="mdi:wrench"
@@ -223,7 +223,7 @@ export default async function Mk1LitePage() {
                                         <th className="p-6 text-left text-sm font-semibold text-slate-900">
                                             Feature
                                         </th>
-                                        <th className="bg-gradient-to-br from-blue-100 to-blue-200 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <th className="bg-linear-to-br from-blue-100 to-blue-200 p-6 text-center text-sm font-semibold text-slate-900">
                                             Lite{" "}
                                             <span className="text-xs font-normal text-slate-700">
                                                 (You&apos;re here)
@@ -239,7 +239,7 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Polling Rate
                                         </td>
-                                        <td className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             1000Hz
                                             <br />
                                             <span className="text-xs font-normal text-slate-700">
@@ -258,7 +258,7 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Hover Height
                                         </td>
-                                        <td className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             15mm
                                         </td>
                                         <td className="p-6 text-center text-sm text-slate-600">
@@ -273,7 +273,7 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Best for
                                         </td>
-                                        <td className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             All serious players
                                         </td>
                                         <td className="p-6 text-center text-sm text-slate-600">
@@ -284,7 +284,7 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Price
                                         </td>
-                                        <td className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             $147
                                         </td>
                                         <td className="p-6 text-center text-sm font-semibold text-slate-900">

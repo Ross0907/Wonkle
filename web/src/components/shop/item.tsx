@@ -1,11 +1,26 @@
 "use client"
 
 import { Icon } from "@iconify/react"
-import { OrbitControls } from "@react-three/drei"
+import { OrbitControls, useTexture } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import Link from "next/link"
-import { useEffect, useState } from "react"
-import { NearestFilter, type Texture, TextureLoader } from "three"
+import { NearestFilter } from "three"
+
+import img from "./streamline-pixel--interface-essential-question-help-square.png"
+
+function Box() {
+    const texture = useTexture(img.src, (texture_) => {
+        texture_.magFilter = NearestFilter
+        texture_.minFilter = NearestFilter
+    })
+
+    return (
+        <mesh>
+            <boxGeometry />
+            <meshPhongMaterial map={texture} />
+        </mesh>
+    )
+}
 
 export default function ShopItem({
     name,
@@ -22,24 +37,13 @@ export default function ShopItem({
     resolution: string
     hoverHeight: string
 }) {
-    const [texture, setTexture] = useState<Texture | undefined>(undefined)
     const isPro = name.includes("Pro")
 
-    useEffect(() => {
-        // Loading textures like it's 2005... it works tho lmao
-        const texture_ = new TextureLoader().load(
-            "/streamline-pixel--interface-essential-question-help-square.png",
-        )
-        texture_.magFilter = NearestFilter
-        texture_.minFilter = NearestFilter
-        setTexture(texture_)
-    }, [])
-
     return (
-        <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white shadow-xl transition-all">
-            <div className="relative h-72 overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-slate-50">
+        <div className="group relative overflow-hidden rounded-3xl bg-linear-to-br from-slate-50 to-white shadow-xl transition-all">
+            <div className="relative h-72 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-slate-50">
                 {isPro && (
-                    <div className="absolute top-6 right-6 z-10 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-bold text-white shadow-lg backdrop-blur-sm">
+                    <div className="absolute top-6 right-6 z-10 rounded-full bg-linear-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-bold text-white shadow-lg backdrop-blur-sm">
                         <Icon icon="mdi:star" className="mr-1 inline h-4 w-4" />
                         PRO
                     </div>
@@ -53,13 +57,10 @@ export default function ShopItem({
                         autoRotate
                         autoRotateSpeed={0.2}
                     />
-                    <mesh>
-                        <boxGeometry />
-                        <meshPhongMaterial map={texture} />
-                    </mesh>
+                    <Box />
                 </Canvas>
 
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-50" />
+                <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-white via-transparent to-transparent opacity-50" />
             </div>
 
             <div className="p-8">
@@ -81,7 +82,7 @@ export default function ShopItem({
                 </div>
 
                 <div className="mb-6 grid grid-cols-2 gap-3 *:duration-100">
-                    <div className="rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-4 transition-colors hover:from-blue-100 hover:to-blue-200/50">
+                    <div className="rounded-xl bg-linear-to-br from-blue-50 to-blue-100/50 p-4 transition-colors hover:from-blue-100 hover:to-blue-200/50">
                         <div className="mb-1 flex items-center gap-2">
                             <Icon
                                 icon="mdi:speedometer"
@@ -96,7 +97,7 @@ export default function ShopItem({
                         </div>
                     </div>
 
-                    <div className="rounded-xl bg-gradient-to-br from-purple-50 to-purple-100/50 p-4 transition-colors hover:from-purple-100 hover:to-purple-200/50">
+                    <div className="rounded-xl bg-linear-to-br from-purple-50 to-purple-100/50 p-4 transition-colors hover:from-purple-100 hover:to-purple-200/50">
                         <div className="mb-1 flex items-center gap-2">
                             <Icon
                                 icon="mdi:resize"
@@ -111,7 +112,7 @@ export default function ShopItem({
                         </div>
                     </div>
 
-                    <div className="rounded-xl bg-gradient-to-br from-green-50 to-green-100/50 p-4 transition-colors hover:from-green-100 hover:to-green-200/50">
+                    <div className="rounded-xl bg-linear-to-br from-green-50 to-green-100/50 p-4 transition-colors hover:from-green-100 hover:to-green-200/50">
                         <div className="mb-1 flex items-center gap-2">
                             <Icon
                                 icon="mdi:grid"
@@ -126,7 +127,7 @@ export default function ShopItem({
                         </div>
                     </div>
 
-                    <div className="rounded-xl bg-gradient-to-br from-orange-50 to-orange-100/50 p-4 transition-colors hover:from-orange-100 hover:to-orange-200/50">
+                    <div className="rounded-xl bg-linear-to-br from-orange-50 to-orange-100/50 p-4 transition-colors hover:from-orange-100 hover:to-orange-200/50">
                         <div className="mb-1 flex items-center gap-2">
                             <Icon
                                 icon="mdi:arrow-expand-vertical"
@@ -152,7 +153,7 @@ export default function ShopItem({
                         className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1"
                     />
 
-                    <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover/btn:translate-x-full" />
+                    <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover/btn:translate-x-full" />
                 </Link>
             </div>
         </div>

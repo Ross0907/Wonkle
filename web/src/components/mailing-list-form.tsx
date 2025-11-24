@@ -3,7 +3,7 @@
 import { Icon } from "@iconify/react"
 import confetti from "canvas-confetti"
 import { useMutation } from "convex/react"
-import { useRef, useState } from "react"
+import { useState } from "react"
 
 import { api } from "../../convex/_generated/api"
 import type { Id } from "../../convex/_generated/dataModel"
@@ -33,7 +33,6 @@ export default function MailingListForm({
         "idle" | "loading" | "success" | "error"
     >("idle")
     const [message, setMessage] = useState("")
-    const formRenderTime = useRef<number>(Date.now())
 
     const joinWaitlist = useMutation(api.waitlist.joinWaitlist)
 
@@ -81,7 +80,7 @@ export default function MailingListForm({
                         ? navigator.userAgent
                         : undefined,
                 honeypot,
-                formRenderTime: formRenderTime.current,
+                formRenderTime: Date.now(),
                 clientIdentifier: getClientIdentifier(),
             })
 

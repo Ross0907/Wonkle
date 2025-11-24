@@ -13,7 +13,7 @@ export default async function Mk1ProPage() {
     return (
         <div className="w-full">
             {/* Hero Section - Lead with emotion and value */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-slate-50 px-4 pt-8 pb-4">
+            <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-slate-50 px-4 pt-8 pb-4">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-8">
                         <Link
@@ -83,7 +83,7 @@ export default async function Mk1ProPage() {
                     </div>
                 </div>
 
-                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-gradient-to-br from-blue-100 via-purple-50 to-transparent opacity-60 blur-3xl" />
+                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-linear-to-br from-blue-100 via-purple-50 to-transparent opacity-60 blur-3xl" />
             </section>
 
             {/* Benefits before specs - emotion before logic */}
@@ -100,7 +100,7 @@ export default async function Mk1ProPage() {
 
                     <div className="grid gap-8 lg:grid-cols-3">
                         {/* Leading with user benefits */}
-                        <div className="group rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-linear-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-blue-600 p-3">
                                 <Icon
                                     icon="mdi:lightning-bolt"
@@ -120,7 +120,7 @@ export default async function Mk1ProPage() {
                             </p>
                         </div>
 
-                        <div className="group rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100/50 p-8 transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-linear-to-br from-purple-50 to-purple-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-purple-600 p-3">
                                 <Icon
                                     icon="mdi:target-variant"
@@ -139,7 +139,7 @@ export default async function Mk1ProPage() {
                             </p>
                         </div>
 
-                        <div className="group rounded-2xl bg-gradient-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-linear-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-green-600 p-3">
                                 <Icon
                                     icon="mdi:tune-vertical"
@@ -227,7 +227,7 @@ export default async function Mk1ProPage() {
                                         <th className="p-6 text-center text-sm font-semibold text-slate-900">
                                             Lite
                                         </th>
-                                        <th className="bg-gradient-to-br from-purple-100 to-purple-200 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <th className="bg-linear-to-br from-purple-100 to-purple-200 p-6 text-center text-sm font-semibold text-slate-900">
                                             Pro{" "}
                                             <span className="text-xs font-normal text-slate-700">
                                                 (You&apos;re here)
@@ -247,7 +247,7 @@ export default async function Mk1ProPage() {
                                                 Fast
                                             </span>
                                         </td>
-                                        <td className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             8000Hz
                                             <br />
                                             <span className="text-xs font-normal text-slate-700">
@@ -262,7 +262,7 @@ export default async function Mk1ProPage() {
                                         <td className="p-6 text-center text-sm text-slate-600">
                                             15mm
                                         </td>
-                                        <td className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             20mm
                                             <br />
                                             <span className="text-xs font-normal text-slate-700">
@@ -277,7 +277,7 @@ export default async function Mk1ProPage() {
                                         <td className="p-6 text-center text-sm text-slate-600">
                                             All players
                                         </td>
-                                        <td className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             Serious competitors
                                         </td>
                                     </tr>
@@ -288,7 +288,7 @@ export default async function Mk1ProPage() {
                                         <td className="p-6 text-center text-sm font-semibold text-slate-900">
                                             $147
                                         </td>
-                                        <td className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             $247
                                         </td>
                                     </tr>

@@ -84,7 +84,7 @@ export default function SpecCard({
                     aria-labelledby="spec-modal-title"
                 >
                     <div
-                        className={`animate-fade-in-scale relative w-full max-w-md overflow-hidden rounded-3xl bg-gradient-to-br ${colors.modal} p-8 shadow-2xl`}
+                        className={`animate-fade-in-scale relative w-full max-w-md overflow-hidden rounded-3xl bg-linear-to-br ${colors.modal} p-8 shadow-2xl`}
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button

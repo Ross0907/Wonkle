@@ -1,17 +1,10 @@
-import { FlatCompat } from "@eslint/eslintrc"
+import nextVitals from "eslint-config-next/core-web-vitals"
+import nextTypescript from "eslint-config-next/typescript"
 import { defineConfig } from "eslint/config"
-import { dirname } from "path"
-import { fileURLToPath } from "url"
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-})
-
-export default defineConfig(
-    ...compat.extends("next/core-web-vitals", "next/typescript"),
+export default defineConfig([
+    ...nextVitals,
+    ...nextTypescript,
     {
         ignores: [
             "node_modules/**",
@@ -34,4 +27,4 @@ export default defineConfig(
             "@typescript-eslint/no-deprecated": "warn",
         },
     },
-)
+])

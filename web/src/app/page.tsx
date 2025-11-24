@@ -1,4 +1,4 @@
-import ShopItem from "@/components/shop-item"
+import ShopItem from "@/components/shop/item"
 import { Icon } from "@iconify/react"
 import Link from "next/link"
 
@@ -48,7 +48,7 @@ export default async function Home() {
                     </div>
                 </div>
 
-                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-gradient-to-br from-blue-100 via-purple-50 to-transparent opacity-60 blur-3xl" />
+                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-linear-to-br from-blue-100 via-purple-50 to-transparent opacity-60 blur-3xl" />
             </section>
 
             <section className="bg-slate-50 px-4 py-20">
@@ -177,7 +177,7 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-blue-50">
-                                        <div className="h-full w-[12.5%] bg-gradient-to-r from-blue-500 to-blue-600 transition-all" />
+                                        <div className="h-full w-[12.5%] bg-linear-to-r from-blue-500 to-blue-600 transition-all" />
                                     </div>
                                 </div>
                                 <div>
@@ -190,7 +190,7 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
-                                        <div className="h-full w-[100%] bg-gradient-to-r from-purple-500 to-pink-500 transition-all" />
+                                        <div className="h-full w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all" />
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-[100%] bg-slate-400 transition-all" />
+                                        <div className="h-full w-full bg-slate-400 transition-all" />
                                     </div>
                                 </div>
                                 <div>
@@ -238,7 +238,7 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
-                                        <div className="h-full w-[100%] bg-gradient-to-r from-purple-500 to-pink-500 transition-all" />
+                                        <div className="h-full w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all" />
                                     </div>
                                 </div>
                                 <div>
@@ -251,7 +251,7 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
-                                        <div className="h-full w-[100%] bg-gradient-to-r from-purple-500 to-pink-500 transition-all" />
+                                        <div className="h-full w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all" />
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +300,7 @@ export default async function Home() {
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
                                         <div
-                                            className="h-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all"
+                                            className="h-full bg-linear-to-r from-purple-500 to-pink-500 transition-all"
                                             style={{ width: "100%" }}
                                         />
                                     </div>
@@ -316,7 +316,7 @@ export default async function Home() {
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
                                         <div
-                                            className="h-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all"
+                                            className="h-full bg-linear-to-r from-purple-500 to-pink-500 transition-all"
                                             style={{ width: "100%" }}
                                         />
                                     </div>
