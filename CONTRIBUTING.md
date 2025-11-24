@@ -70,6 +70,12 @@ For example:
 - `firmware: add more test cases for functionName`
 - `web: bump packageName version from v6 to v9`
 
+## Dependencies
+
+Number of dependencies must be kept at a minimum. Only add dependencies instead
+of copying the code when maintaining it ourselves is not an option. Dependency
+versions must be specific so they change less frequently under our feet.
+
 <!-- Links -->
 
 [otd-fork]: https://github.com/wonkleio/OpenTabletDriver
