@@ -23,10 +23,7 @@ export default function Footer() {
                                 href="https://osu.ppy.sh/users/15691003"
                             >
                                 pomp
-                                <Icon
-                                    icon="mdi:open-in-new"
-                                    className="h-3 w-3"
-                                />
+                                <Icon icon="mdi:open-in-new" className="h-3 w-3" />
                             </Link>
                         </p>
                         <p className="mt-1 text-xs text-slate-500">
@@ -38,10 +35,7 @@ export default function Footer() {
                                 href="https://github.com/SwiftAkira"
                             >
                                 Swift
-                                <Icon
-                                    icon="mdi:open-in-new"
-                                    className="h-3 w-3"
-                                />
+                                <Icon icon="mdi:open-in-new" className="h-3 w-3" />
                             </Link>{" "}
                             • © 2025 Wonkle
                         </p>
@@ -60,10 +54,7 @@ export default function Footer() {
                             className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-[#5865F2] hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"
                             aria-label="Discord"
                         >
-                            <Icon
-                                icon="simple-icons:discord"
-                                className="h-6 w-6"
-                            />
+                            <Icon icon="simple-icons:discord" className="h-6 w-6" />
                         </Link>
                         <Link
                             title="Support us on Open Collective"
@@ -73,10 +64,7 @@ export default function Footer() {
                             className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-[#7FADF2] hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7FADF2]"
                             aria-label="Open Collective"
                         >
-                            <Icon
-                                icon="simple-icons:opencollective"
-                                className="h-5 w-5"
-                            />
+                            <Icon icon="simple-icons:opencollective" className="h-5 w-5" />
                         </Link>
                         <Link
                             title="Follow us on BlueSky"
@@ -86,10 +74,7 @@ export default function Footer() {
                             className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-[#1185FE] hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7FADF2]"
                             aria-label="BlueSky"
                         >
-                            <Icon
-                                icon="simple-icons:bluesky"
-                                className="h-5 w-5"
-                            />
+                            <Icon icon="simple-icons:bluesky" className="h-5 w-5" />
                         </Link>
                         <Link
                             title="View source code on GitHub"
@@ -99,10 +84,7 @@ export default function Footer() {
                             className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-slate-900 hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
                             aria-label="GitHub"
                         >
-                            <Icon
-                                icon="simple-icons:github"
-                                className="h-6 w-6"
-                            />
+                            <Icon icon="simple-icons:github" className="h-6 w-6" />
                         </Link>
                         <Link
                             title="Send us an email"
@@ -110,10 +92,7 @@ export default function Footer() {
                             className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-[#6D4AFF] hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6D4AFF]"
                             aria-label="Email"
                         >
-                            <Icon
-                                icon="simple-icons:protonmail"
-                                className="h-6 w-6"
-                            />
+                            <Icon icon="simple-icons:protonmail" className="h-6 w-6" />
                         </Link>
                     </div>
                 </div>

@@ -29,9 +29,7 @@ export default function MailingListForm({
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
     const [honeypot, setHoneypot] = useState("")
-    const [status, setStatus] = useState<
-        "idle" | "loading" | "success" | "error"
-    >("idle")
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
     const [message, setMessage] = useState("")
 
     const joinWaitlist = useMutation(api.waitlist.joinWaitlist)
@@ -71,14 +69,8 @@ export default function MailingListForm({
                 name: name.trim() || undefined,
                 productId,
                 source,
-                referrer:
-                    typeof document !== "undefined"
-                        ? document.referrer
-                        : undefined,
-                userAgent:
-                    typeof navigator !== "undefined"
-                        ? navigator.userAgent
-                        : undefined,
+                referrer: typeof document !== "undefined" ? document.referrer : undefined,
+                userAgent: typeof navigator !== "undefined" ? navigator.userAgent : undefined,
                 honeypot,
                 formRenderTime: Date.now(),
                 clientIdentifier: getClientIdentifier(),
@@ -120,10 +112,7 @@ export default function MailingListForm({
     if (variant === "compact") {
         return (
             <div className="mx-auto w-full max-w-md">
-                <form
-                    onSubmit={handleSubmit}
-                    className="flex flex-col gap-3 sm:flex-row"
-                >
+                <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
                     <input
                         type="text"
                         name="website"
@@ -156,9 +145,7 @@ export default function MailingListForm({
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Enter your email"
-                            disabled={
-                                status === "loading" || status === "success"
-                            }
+                            disabled={status === "loading" || status === "success"}
                             className="w-full rounded-full border-2 border-slate-300 bg-white py-3 pr-4 pl-12 text-slate-900 transition-all placeholder:text-slate-400 hover:border-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 focus:outline-none disabled:cursor-not-allowed disabled:opacity-60"
                             aria-describedby={
                                 status === "success" || status === "error"
@@ -172,34 +159,23 @@ export default function MailingListForm({
                         disabled={status === "loading" || status === "success"}
                         className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-8 py-3 font-semibold text-white shadow-lg shadow-blue-600/30 transition-all hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-60"
                         aria-label={
-                            status === "loading"
-                                ? "Subscribing..."
-                                : "Subscribe to mailing list"
+                            status === "loading" ? "Subscribing..." : "Subscribe to mailing list"
                         }
                     >
                         {status === "loading" ? (
                             <>
-                                <Icon
-                                    icon="mdi:loading"
-                                    className="h-5 w-5 animate-spin"
-                                />
+                                <Icon icon="mdi:loading" className="h-5 w-5 animate-spin" />
                                 Subscribing...
                             </>
                         ) : status === "success" ? (
                             <>
-                                <Icon
-                                    icon="mdi:check-circle"
-                                    className="h-5 w-5"
-                                />
+                                <Icon icon="mdi:check-circle" className="h-5 w-5" />
                                 Subscribed!
                             </>
                         ) : (
                             <>
                                 Subscribe
-                                <Icon
-                                    icon="mdi:arrow-right"
-                                    className="h-5 w-5"
-                                />
+                                <Icon icon="mdi:arrow-right" className="h-5 w-5" />
                             </>
                         )}
                     </button>
@@ -217,11 +193,7 @@ export default function MailingListForm({
                         aria-live="polite"
                     >
                         <Icon
-                            icon={
-                                status === "success"
-                                    ? "mdi:check-circle"
-                                    : "mdi:alert-circle"
-                            }
+                            icon={status === "success" ? "mdi:check-circle" : "mdi:alert-circle"}
                             className="mt-0.5 h-5 w-5 shrink-0"
                         />
                         <p className="text-sm font-medium">{message}</p>
@@ -233,10 +205,7 @@ export default function MailingListForm({
 
     return (
         <div className="w-full max-w-lg">
-            <form
-                onSubmit={handleSubmit}
-                className="rounded-2xl bg-white p-6 shadow-lg"
-            >
+            <form onSubmit={handleSubmit} className="rounded-2xl bg-white p-6 shadow-lg">
                 <input
                     type="text"
                     name="website"
@@ -272,9 +241,7 @@ export default function MailingListForm({
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             placeholder="Your name"
-                            disabled={
-                                status === "loading" || status === "success"
-                            }
+                            disabled={status === "loading" || status === "success"}
                             className="w-full rounded-xl border-2 border-slate-300 bg-white py-3 pr-4 pl-12 text-slate-900 transition-all placeholder:text-slate-400 hover:border-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 focus:outline-none disabled:cursor-not-allowed disabled:opacity-60"
                         />
                     </div>
@@ -299,9 +266,7 @@ export default function MailingListForm({
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="you@example.com"
-                            disabled={
-                                status === "loading" || status === "success"
-                            }
+                            disabled={status === "loading" || status === "success"}
                             className="w-full rounded-xl border-2 border-slate-300 bg-white py-3 pr-4 pl-12 text-slate-900 transition-all placeholder:text-slate-400 hover:border-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 focus:outline-none disabled:cursor-not-allowed disabled:opacity-60"
                             aria-describedby={
                                 status === "success" || status === "error"
@@ -317,17 +282,12 @@ export default function MailingListForm({
                     disabled={status === "loading" || status === "success"}
                     className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/30 transition-all hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-60"
                     aria-label={
-                        status === "loading"
-                            ? "Subscribing..."
-                            : "Subscribe to mailing list"
+                        status === "loading" ? "Subscribing..." : "Subscribe to mailing list"
                     }
                 >
                     {status === "loading" ? (
                         <>
-                            <Icon
-                                icon="mdi:loading"
-                                className="h-5 w-5 animate-spin"
-                            />
+                            <Icon icon="mdi:loading" className="h-5 w-5 animate-spin" />
                             Subscribing...
                         </>
                     ) : status === "success" ? (
@@ -355,11 +315,7 @@ export default function MailingListForm({
                         aria-live="polite"
                     >
                         <Icon
-                            icon={
-                                status === "success"
-                                    ? "mdi:check-circle"
-                                    : "mdi:alert-circle"
-                            }
+                            icon={status === "success" ? "mdi:check-circle" : "mdi:alert-circle"}
                             className="mt-0.5 h-5 w-5 shrink-0"
                         />
                         <p className="text-sm font-medium">{message}</p>
@@ -367,8 +323,8 @@ export default function MailingListForm({
                 )}
 
                 <p className="mt-4 text-center text-xs text-slate-500">
-                    We&apos;ll only send you launch announcements and product
-                    updates. No spam, ever.
+                    We&apos;ll only send you launch announcements and product updates. No spam,
+                    ever.
                 </p>
             </form>
         </div>

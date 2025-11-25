@@ -13,10 +13,7 @@ export default function PronounceButton() {
                 className="cursor-pointer rounded px-2 py-1"
                 onClick={() => audioRef.current?.play()}
             >
-                <Icon
-                    icon="mdi:speakerphone"
-                    className="inline-block h-5 w-5"
-                />
+                <Icon icon="mdi:speakerphone" className="inline-block h-5 w-5" />
             </button>
             <audio ref={audioRef} src="/wonkle.mp3" className="hidden" />
         </>

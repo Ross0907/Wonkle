@@ -102,18 +102,14 @@ export default async function Mk1ProPage() {
                         {/* Leading with user benefits */}
                         <div className="group rounded-2xl bg-linear-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-blue-600 p-3">
-                                <Icon
-                                    icon="mdi:lightning-bolt"
-                                    className="h-8 w-8 text-white"
-                                />
+                                <Icon icon="mdi:lightning-bolt" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
                                 Never miss a beat
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                8000Hz polling means your every move registers
-                                instantly. Hit streams and jumps you thought
-                                were impossible.
+                                8000Hz polling means your every move registers instantly. Hit
+                                streams and jumps you thought were impossible.
                             </p>
                             <p className="text-sm font-semibold text-blue-700">
                                 0.125ms response time vs 5ms standard
@@ -122,17 +118,14 @@ export default async function Mk1ProPage() {
 
                         <div className="group rounded-2xl bg-linear-to-br from-purple-50 to-purple-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-purple-600 p-3">
-                                <Icon
-                                    icon="mdi:target-variant"
-                                    className="h-8 w-8 text-white"
-                                />
+                                <Icon icon="mdi:target-variant" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
                                 Pixel-perfect control
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                200 lpmm resolution captures micro-movements
-                                other tablets miss. Your aim, perfected.
+                                200 lpmm resolution captures micro-movements other tablets miss.
+                                Your aim, perfected.
                             </p>
                             <p className="text-sm font-semibold text-purple-700">
                                 Professional-grade precision
@@ -141,18 +134,14 @@ export default async function Mk1ProPage() {
 
                         <div className="group rounded-2xl bg-linear-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-green-600 p-3">
-                                <Icon
-                                    icon="mdi:tune-vertical"
-                                    className="h-8 w-8 text-white"
-                                />
+                                <Icon icon="mdi:tune-vertical" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
                                 Play your way
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                20mm hover height accommodates any style: hover,
-                                drag, or tap. Fully customizable firmware adapts
-                                to you.
+                                20mm hover height accommodates any style: hover, drag, or tap. Fully
+                                customizable firmware adapts to you.
                             </p>
                             <p className="text-sm font-semibold text-green-700">
                                 Open-source and customizable
@@ -243,9 +232,7 @@ export default async function Mk1ProPage() {
                                         <td className="p-6 text-center text-sm text-slate-600">
                                             1000Hz
                                             <br />
-                                            <span className="text-xs">
-                                                Fast
-                                            </span>
+                                            <span className="text-xs">Fast</span>
                                         </td>
                                         <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             8000Hz

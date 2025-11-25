@@ -1,8 +1,4 @@
-import {
-    HOUR,
-    type RateLimitConfig,
-    RateLimiter,
-} from "@convex-dev/rate-limiter"
+import { HOUR, type RateLimitConfig, RateLimiter } from "@convex-dev/rate-limiter"
 import { v } from "convex/values"
 
 import { components } from "./_generated/api"
@@ -122,8 +118,7 @@ export const joinWaitlist = mutation({
                 return {
                     success: true,
                     waitlistId: emailAlreadyExists._id,
-                    message:
-                        "Welcome back! You've been re-added to the waitlist.",
+                    message: "Welcome back! You've been re-added to the waitlist.",
                 }
             }
 
@@ -211,9 +206,7 @@ export const getWaitlistCount = query({
         const entries = args.productId
             ? await ctx.db
                   .query("waitlist")
-                  .withIndex("by_product_id", (q) =>
-                      q.eq("productId", args.productId),
-                  )
+                  .withIndex("by_product_id", (q) => q.eq("productId", args.productId))
                   .collect()
             : await ctx.db.query("waitlist").collect()
 

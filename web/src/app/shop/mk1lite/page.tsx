@@ -101,17 +101,14 @@ export default async function Mk1LitePage() {
                     <div className="grid gap-8 lg:grid-cols-3">
                         <div className="group rounded-2xl bg-linear-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-blue-600 p-3">
-                                <Icon
-                                    icon="mdi:speedometer"
-                                    className="h-8 w-8 text-white"
-                                />
+                                <Icon icon="mdi:speedometer" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
                                 1000Hz polling rate
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                Smooth, responsive input for competitive play.
-                                Hit your patterns with confidence.
+                                Smooth, responsive input for competitive play. Hit your patterns
+                                with confidence.
                             </p>
                             <p className="text-sm font-semibold text-blue-700">
                                 1ms response time vs 5ms standard
@@ -120,18 +117,14 @@ export default async function Mk1LitePage() {
 
                         <div className="group rounded-2xl bg-linear-to-br from-purple-50 to-purple-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-purple-600 p-3">
-                                <Icon
-                                    icon="mdi:target-variant"
-                                    className="h-8 w-8 text-white"
-                                />
+                                <Icon icon="mdi:target-variant" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
                                 Precision you can feel
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                200 lpmm resolution captures every movement
-                                accurately. Perfect for improving your aim and
-                                consistency.
+                                200 lpmm resolution captures every movement accurately. Perfect for
+                                improving your aim and consistency.
                             </p>
                             <p className="text-sm font-semibold text-purple-700">
                                 High-precision tracking
@@ -140,18 +133,14 @@ export default async function Mk1LitePage() {
 
                         <div className="group rounded-2xl bg-linear-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-green-600 p-3">
-                                <Icon
-                                    icon="mdi:wrench"
-                                    className="h-8 w-8 text-white"
-                                />
+                                <Icon icon="mdi:wrench" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
                                 Make it yours
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                Customize settings and tweak performance to
-                                match your style. Open-source firmware means
-                                full transparency and community control.
+                                Customize settings and tweak performance to match your style.
+                                Open-source firmware means full transparency and community control.
                             </p>
                             <p className="text-sm font-semibold text-green-700">
                                 Fully customizable
@@ -249,9 +238,7 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-center text-sm text-slate-600">
                                             8000Hz
                                             <br />
-                                            <span className="text-xs">
-                                                8× faster
-                                            </span>
+                                            <span className="text-xs">8× faster</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -264,9 +251,7 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-center text-sm text-slate-600">
                                             20mm
                                             <br />
-                                            <span className="text-xs">
-                                                +33% range
-                                            </span>
+                                            <span className="text-xs">+33% range</span>
                                         </td>
                                     </tr>
                                     <tr>

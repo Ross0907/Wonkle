@@ -24,9 +24,7 @@ export default function Navbar() {
                         alt="wonkle logo"
                         priority
                     />
-                    <span className="text-xl font-bold text-slate-900 select-none">
-                        Wonkle
-                    </span>
+                    <span className="text-xl font-bold text-slate-900 select-none">Wonkle</span>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -61,10 +59,7 @@ export default function Navbar() {
                     aria-label="Toggle menu"
                     aria-expanded={isMenuOpen}
                 >
-                    <Icon
-                        icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
-                        className="h-6 w-6"
-                    />
+                    <Icon icon={isMenuOpen ? "mdi:close" : "mdi:menu"} className="h-6 w-6" />
                 </button>
             </div>
 

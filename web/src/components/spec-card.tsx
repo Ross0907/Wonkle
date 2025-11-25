@@ -38,13 +38,7 @@ const colorClasses = {
     },
 }
 
-export default function SpecCard({
-    icon,
-    value,
-    label,
-    description,
-    color,
-}: SpecCardProps) {
+export default function SpecCard({ icon, value, label, description, color }: SpecCardProps) {
     const [isOpen, setIsOpen] = useState(false)
     const colors = colorClasses[color]
 
@@ -57,16 +51,11 @@ export default function SpecCard({
             >
                 <div className="absolute top-4 right-4 opacity-0 transition-opacity group-hover:opacity-100">
                     <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-100">
-                        <Icon
-                            icon="mdi:information"
-                            className="h-4 w-4 text-slate-600"
-                        />
+                        <Icon icon="mdi:information" className="h-4 w-4 text-slate-600" />
                     </div>
                 </div>
                 <Icon icon={icon} className={`mb-4 h-10 w-10 ${colors.icon}`} />
-                <h3 className="mb-2 text-3xl font-bold text-slate-900">
-                    {value}
-                </h3>
+                <h3 className="mb-2 text-3xl font-bold text-slate-900">{value}</h3>
                 <p className="text-sm font-medium text-slate-600">{label}</p>
                 <div className="mt-3 flex items-center gap-1 text-xs font-medium text-slate-500 opacity-0 transition-opacity group-hover:opacity-100">
                     <span>Tap to learn more</span>
@@ -92,15 +81,10 @@ export default function SpecCard({
                             className="absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 backdrop-blur-sm transition-all hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
                             aria-label="Close dialog"
                         >
-                            <Icon
-                                icon="mdi:close"
-                                className="h-5 w-5 text-slate-700"
-                            />
+                            <Icon icon="mdi:close" className="h-5 w-5 text-slate-700" />
                         </button>
 
-                        <div
-                            className={`mb-4 inline-flex rounded-xl ${colors.bg} p-3`}
-                        >
+                        <div className={`mb-4 inline-flex rounded-xl ${colors.bg} p-3`}>
                             <Icon icon={icon} className="h-8 w-8 text-white" />
                         </div>
 
@@ -110,15 +94,9 @@ export default function SpecCard({
                         >
                             {value}
                         </h3>
-                        <p
-                            className={`mb-4 text-base font-semibold ${colors.text}`}
-                        >
-                            {label}
-                        </p>
+                        <p className={`mb-4 text-base font-semibold ${colors.text}`}>{label}</p>
 
-                        <p className="text-base leading-relaxed text-slate-700">
-                            {description}
-                        </p>
+                        <p className="text-base leading-relaxed text-slate-700">{description}</p>
                     </div>
                 </div>
             )}

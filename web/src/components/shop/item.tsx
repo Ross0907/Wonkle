@@ -66,17 +66,11 @@ export default function ShopItem({
             <div className="p-8">
                 <div className="mb-6 flex items-start justify-between gap-4">
                     <div>
-                        <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-                            {name}
-                        </h3>
-                        <p className="mt-1 text-sm text-slate-500">
-                            Professional osu! tablet
-                        </p>
+                        <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">{name}</h3>
+                        <p className="mt-1 text-sm text-slate-500">Professional osu! tablet</p>
                     </div>
                     <div className="text-right">
-                        <div className="text-3xl font-bold text-slate-900">
-                            ${price}
-                        </div>
+                        <div className="text-3xl font-bold text-slate-900">${price}</div>
                         <div className="text-xs text-slate-500">USD</div>
                     </div>
                 </div>
@@ -84,47 +78,26 @@ export default function ShopItem({
                 <div className="mb-6 grid grid-cols-2 gap-3 *:duration-100">
                     <div className="rounded-xl bg-linear-to-br from-blue-50 to-blue-100/50 p-4 transition-colors hover:from-blue-100 hover:to-blue-200/50">
                         <div className="mb-1 flex items-center gap-2">
-                            <Icon
-                                icon="mdi:speedometer"
-                                className="h-5 w-5 text-blue-600"
-                            />
-                            <span className="text-xs font-medium text-blue-900">
-                                Polling Rate
-                            </span>
+                            <Icon icon="mdi:speedometer" className="h-5 w-5 text-blue-600" />
+                            <span className="text-xs font-medium text-blue-900">Polling Rate</span>
                         </div>
-                        <div className="text-xl font-bold text-blue-900">
-                            {pollingRate}
-                        </div>
+                        <div className="text-xl font-bold text-blue-900">{pollingRate}</div>
                     </div>
 
                     <div className="rounded-xl bg-linear-to-br from-purple-50 to-purple-100/50 p-4 transition-colors hover:from-purple-100 hover:to-purple-200/50">
                         <div className="mb-1 flex items-center gap-2">
-                            <Icon
-                                icon="mdi:resize"
-                                className="h-5 w-5 text-purple-600"
-                            />
-                            <span className="text-xs font-medium text-purple-900">
-                                Active Area
-                            </span>
+                            <Icon icon="mdi:resize" className="h-5 w-5 text-purple-600" />
+                            <span className="text-xs font-medium text-purple-900">Active Area</span>
                         </div>
-                        <div className="text-xl font-bold text-purple-900">
-                            {activeArea}
-                        </div>
+                        <div className="text-xl font-bold text-purple-900">{activeArea}</div>
                     </div>
 
                     <div className="rounded-xl bg-linear-to-br from-green-50 to-green-100/50 p-4 transition-colors hover:from-green-100 hover:to-green-200/50">
                         <div className="mb-1 flex items-center gap-2">
-                            <Icon
-                                icon="mdi:grid"
-                                className="h-5 w-5 text-green-600"
-                            />
-                            <span className="text-xs font-medium text-green-900">
-                                Resolution
-                            </span>
+                            <Icon icon="mdi:grid" className="h-5 w-5 text-green-600" />
+                            <span className="text-xs font-medium text-green-900">Resolution</span>
                         </div>
-                        <div className="text-xl font-bold text-green-900">
-                            {resolution}
-                        </div>
+                        <div className="text-xl font-bold text-green-900">{resolution}</div>
                     </div>
 
                     <div className="rounded-xl bg-linear-to-br from-orange-50 to-orange-100/50 p-4 transition-colors hover:from-orange-100 hover:to-orange-200/50">
@@ -137,9 +110,7 @@ export default function ShopItem({
                                 Hover Height
                             </span>
                         </div>
-                        <div className="text-xl font-bold text-orange-900">
-                            {hoverHeight}
-                        </div>
+                        <div className="text-xl font-bold text-orange-900">{hoverHeight}</div>
                     </div>
                 </div>
 
