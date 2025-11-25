@@ -12,7 +12,7 @@ in
       nixd # Nix LSP
       nixfmt-rfc-style # Nix formatter
 
-      probe-rs # for firmware flashing and debugging
+      probe-rs-tools # for firmware flashing and debugging
       usbutils # lsusb, usb-devices, and usbhid-dump
     ]
     ++ deps;
