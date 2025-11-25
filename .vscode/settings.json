@@ -1,7 +1,7 @@
 {
   // General
   "editor.formatOnSave": true,
-  "editor.rulers": [80],
+  "editor.rulers": [100],
   "files.readonlyInclude": {
     "web/convex/_generated/*": true
   },
@@ -18,8 +18,7 @@
   "rust-analyzer.check.allTargets": false,
   "rust-analyzer.check.targets": "thumbv7em-none-eabihf",
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    "editor.rulers": [100]
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
   // web

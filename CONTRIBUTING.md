@@ -55,9 +55,8 @@ info.
 
 ### line length
 
-Keep your text under 80 characters and rust code under 100 characters per line
-unless absolutely necessary. If you are using vscode, a ruler should help you
-know when you are over that limit.
+All human-written text files must have 100 characters or less per line unless absolutely necessary.
+When using vscode, there should be a line that indicates where the limit is.
 
 ### Commit
 
