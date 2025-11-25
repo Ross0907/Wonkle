@@ -47,4 +47,4 @@ jobs:
 
       - run: cd web && pnpm build:frontend
 
-      - run: cd web && pnpm prettier -l .
+      - run: cd web && pnpm exec prettier -l ..
