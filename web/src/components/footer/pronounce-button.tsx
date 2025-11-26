@@ -10,6 +10,7 @@ export default function PronounceButton() {
     return (
         <>
             <button
+                title="Hear pronunciation"
                 className="cursor-pointer rounded px-2 py-1"
                 onClick={() => audioRef.current?.play()}
             >
