@@ -220,65 +220,6 @@ export default async function Home() {
                             </div>
                         </div>
 
-                        {/* Resolution Comparison */}
-                        <div>
-                            <h3 className="mb-6 text-2xl font-bold text-slate-900">Resolution</h3>
-                            <div className="space-y-4">
-                                <div>
-                                    <div className="mb-2 flex items-center justify-between">
-                                        <span className="text-sm font-medium text-slate-700">
-                                            Wacom CTL-472
-                                        </span>
-                                        <span className="text-sm font-semibold text-slate-900">
-                                            100 lpmm
-                                        </span>
-                                    </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-[50%] bg-slate-400 transition-all" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="mb-2 flex items-center justify-between">
-                                        <span className="text-sm font-medium text-slate-700">
-                                            Wacom PTK-470
-                                        </span>
-                                        <span className="text-sm font-semibold text-slate-900">
-                                            200 lpmm
-                                        </span>
-                                    </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-full bg-slate-400 transition-all" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="mb-2 flex items-center justify-between">
-                                        <span className="text-sm font-medium text-slate-700">
-                                            Wonkleboard Lite mk.1
-                                        </span>
-                                        <span className="text-sm font-semibold text-purple-900">
-                                            200 lpmm
-                                        </span>
-                                    </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
-                                        <div className="h-full w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="mb-2 flex items-center justify-between">
-                                        <span className="text-sm font-medium text-slate-700">
-                                            Wonkleboard Pro mk.1
-                                        </span>
-                                        <span className="text-sm font-semibold text-purple-900">
-                                            200 lpmm
-                                        </span>
-                                    </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
-                                        <div className="h-full w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Active Area Comparison */}
                         <div>
                             <h3 className="mb-6 text-2xl font-bold text-slate-900">Active Area</h3>
