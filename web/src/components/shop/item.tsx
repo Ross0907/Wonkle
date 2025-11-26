@@ -39,18 +39,9 @@ export default function ShopItem({
     resolution: string
     hoverHeight: string
 }) {
-    const isPro = name.includes("Pro")
-
     return (
         <div className="group relative overflow-hidden rounded-3xl bg-linear-to-br from-slate-50 to-white shadow-xl transition-all">
             <div className="relative h-72 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-slate-50">
-                {isPro && (
-                    <div className="absolute top-6 right-6 z-10 rounded-full bg-linear-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-bold text-white shadow-lg backdrop-blur-sm">
-                        <Icon icon="mdi:star" className="mr-1 inline h-4 w-4" />
-                        PRO
-                    </div>
-                )}
-
                 <Canvas camera={{ position: [3, 3, 3], fov: 25 }}>
                     <ambientLight intensity={3} />
                     <OrbitControls
@@ -69,7 +60,6 @@ export default function ShopItem({
                 <div className="mb-6 flex items-start justify-between gap-4">
                     <div>
                         <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">{name}</h3>
-                        <p className="mt-1 text-sm text-slate-500">Professional osu! tablet</p>
                     </div>
                     <div className="text-right">
                         <div className="text-3xl font-bold text-slate-900">${price}</div>

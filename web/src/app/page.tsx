@@ -5,17 +5,15 @@ import Link from "next/link"
 export default async function Home() {
     return (
         <div className="w-full">
-            <section className="relative overflow-hidden px-4 pt-16 pb-24 sm:pt-24 sm:pb-32">
+            <section id="hero" className="px-4 pt-16 pb-24 sm:pt-24 sm:pb-32">
                 <div className="mx-auto max-w-6xl">
                     <div className="animate-fade-in text-center" style={{ animationDelay: "0.1s" }}>
-                        <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl md:text-7xl lg:text-8xl">
-                            this one&apos;s made for
-                            <br />
-                            <span className="gradient-text">You</span>
+                        <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl md:text-7xl">
+                            this one is made for <span className="gradient-text sm:block">You</span>
                         </h1>
                         <p className="mx-auto mb-12 max-w-2xl text-lg text-slate-600 sm:text-xl md:text-2xl">
-                            Wonkle tablet is the first and only tablet made specifically for osu!
-                            players.
+                            Tablets, keypads, pens and more. <br />
+                            Made by osu! players, for osu! players.
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -38,11 +36,9 @@ export default async function Home() {
                         </div>
                     </div>
                 </div>
-
-                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-linear-to-br from-blue-100 via-purple-50 to-transparent opacity-60 blur-3xl" />
             </section>
 
-            <section className="bg-slate-50 px-4 py-20">
+            <section id="how-were-different" className="bg-slate-50 px-4 py-20">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-16 text-center">
                         <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -51,34 +47,36 @@ export default async function Home() {
                     </div>
 
                     <div className="grid gap-8 md:grid-cols-3">
-                        <div className="group rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-white p-8 shadow-sm transition-all">
                             <div className="mb-4 inline-flex rounded-xl bg-blue-100 p-3">
                                 <Icon icon="mdi:speedometer" className="h-8 w-8 text-blue-600" />
                             </div>
                             <h3 className="mb-2 text-xl font-semibold text-slate-900">
-                                We&apos;re fast
+                                We&apos;re Fast
                             </h3>
                             <p className="text-slate-600">
-                                With polling as high as 8000Hz and everything being built with
-                                latency in mind, your osu! gameplay will feel smoother than ever.
+                                Gaming is an afterthought for every other tablets. Not with ours. We
+                                built everything with performance in mind, so your osu! gameplay
+                                will feel smoother than ever.
                             </p>
                         </div>
 
-                        {/* Yes, we measure in lines per millimeter. Because we're cool */}
-                        <div className="group rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-white p-8 shadow-sm transition-all">
                             <div className="mb-4 inline-flex rounded-xl bg-yellow-100 p-3">
                                 <Icon icon="mdi:attach-money" className="h-8 w-8 text-yellow-600" />
                             </div>
                             <h3 className="mb-2 text-xl font-semibold text-slate-900">
-                                We&apos;re cheap
+                                We&apos;re Cheap
                             </h3>
                             <p className="text-slate-600">
-                                We want to be everyone&apos;s first and only gaming tablet so we
-                                made sure the price is affordable to as many people as possible.
+                                We&apos;re not a traditional business with investors to please. In
+                                another words, we&apos;re not motivated to maximize profit.
+                                We&apos;re free to be a bunch of passionate players who want
+                                what&apos;s best for us.
                             </p>
                         </div>
 
-                        <div className="group rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg">
+                        <div className="group rounded-2xl bg-white p-8 shadow-sm transition-all">
                             <div className="mb-4 inline-flex rounded-xl bg-green-100 p-3">
                                 <Icon
                                     icon="mdi:open-source-initiative"
@@ -92,14 +90,21 @@ export default async function Home() {
                                 Everything we build - the hardware, software, even this very website
                                 is available on{" "}
                                 <Link
-                                    title="View source code on GitHub"
                                     href="https://github.com/wonkleio/wonkle"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-1 font-semibold text-slate-900 underline decoration-slate-300 decoration-2 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
-                                    aria-label="GitHub"
                                 >
                                     Github
+                                </Link>
+                                {" under "}
+                                <Link
+                                    href="https://opensource.org/licenses"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 font-semibold text-slate-900 underline decoration-slate-300 decoration-2 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
+                                >
+                                    OSI-Approved Licenses
                                 </Link>
                                 .
                             </p>
@@ -108,8 +113,7 @@ export default async function Home() {
                 </div>
             </section>
 
-            {/* Comparison Section */}
-            <section className="bg-white px-4 py-20">
+            <section id="how-were-better" className="bg-white px-4 py-20">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-16 text-center">
                         <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -308,7 +312,7 @@ export default async function Home() {
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-12 text-center">
                         <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-                            Choose your weapon
+                            Products
                         </h2>
                     </div>
 
@@ -335,7 +339,7 @@ export default async function Home() {
                 </div>
             </section>
 
-            <section className="bg-slate-900 px-4 py-20">
+            <section id="join-our-community" className="bg-slate-900 px-4 py-20">
                 <div className="mx-auto max-w-4xl text-center">
                     <h2 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Join our community

@@ -14,34 +14,7 @@ export default function Footer() {
                             Wonkle • /ˈwɑːŋkəl/
                             <PronounceButton />
                         </p>
-                        <p className="text-sm text-slate-600">
-                            Made with ❤️ by{" "}
-                            <Link
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 font-semibold text-slate-900 underline decoration-slate-300 decoration-2 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
-                                href="https://osu.ppy.sh/users/15691003"
-                            >
-                                pomp
-                                <Icon icon="mdi:open-in-new" className="h-3 w-3" />
-                            </Link>
-                        </p>
-                        <p className="mt-1 text-xs text-slate-500">
-                            Website made by{" "}
-                            <Link
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 font-semibold text-slate-900 underline decoration-slate-300 decoration-2 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
-                                href="https://github.com/SwiftAkira"
-                            >
-                                Swift
-                                <Icon icon="mdi:open-in-new" className="h-3 w-3" />
-                            </Link>{" "}
-                            • © 2025 Wonkle
-                        </p>
-                        <p className="mt-0.5 text-xs text-slate-500">
-                            Open source hardware and software.
-                        </p>
+                        <p className="text-sm text-slate-600">Made with ❤️ by osu! players</p>
                     </div>
 
                     {/* Social Links */}

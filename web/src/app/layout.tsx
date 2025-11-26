@@ -13,9 +13,8 @@ const notoSans = Noto_Sans({
 })
 
 export const metadata: Metadata = {
-    title: "Wonkle tablet - tablets for osu!",
-    description:
-        "The world's most advanced open-source tablet designed specifically for osu! players. Experience lightning-fast 8000Hz polling, pixel-perfect precision, and total customization.",
+    title: "Wonkle",
+    description: "Made by osu! players, for osu! players.",
 }
 
 export default function RootLayout({
