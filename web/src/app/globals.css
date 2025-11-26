@@ -132,16 +132,15 @@ body {
 }
 
 .animate-flipflop {
-    animation: flipflop 10s infinite steps(1);
+    animation: flipflop 10s infinite;
 }
 
 @keyframes flipflop {
-    0%,
-    50% {
+    0% {
         background-color: oklch(62.3% 0.214 259.815); /* blue-500 */
     }
 
-    50.001%,
+    75%,
     100% {
         background-color: oklch(86.9% 0.022 252.894); /* slate-300 */
     }
