@@ -135,8 +135,20 @@ export default async function Home() {
                                             133Hz
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-[1.6625%] bg-slate-400 transition-all" />
+                                    <div className="flex h-8 w-full overflow-hidden">
+                                        {/* 178.451128px width + 2px margin = 180.451128 for 133Hz */}
+                                        {/* max-w-4xl = 896px */}
+                                        {[...Array<number>(Math.ceil(896 / 180.451128))].map(
+                                            (_, i) => (
+                                                <div
+                                                    key={`ctl472-polling-rate-${i}`}
+                                                    style={{
+                                                        animationDelay: `${(i + 1) * 10 * 180.451128}ms`,
+                                                    }}
+                                                    className="animate-flipflop mx-px h-full max-w-[calc(24000px/133-2px)] min-w-[calc(24000px/133-2px)] rounded bg-slate-300"
+                                                />
+                                            ),
+                                        )}
                                     </div>
                                 </div>
                                 <div>
@@ -148,8 +160,17 @@ export default async function Home() {
                                             200Hz
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-[2.5%] bg-slate-400 transition-all" />
+                                    <div className="flex h-8 w-full overflow-hidden">
+                                        {/* 118px width + 2px margin = 120px for 200Hz */}
+                                        {[...Array<number>(Math.ceil(896 / 120))].map((_, i) => (
+                                            <div
+                                                key={`ptk-470-polling-rate-${i}`}
+                                                style={{
+                                                    animationDelay: `${(i + 1) * 10 * 120}ms`,
+                                                }}
+                                                className="animate-flipflop mx-px h-full max-w-[calc(24000px/200-2px)] min-w-[calc(24000px/200-2px)] rounded bg-slate-300"
+                                            />
+                                        ))}
                                     </div>
                                 </div>
                                 <div>
@@ -157,12 +178,21 @@ export default async function Home() {
                                         <span className="text-sm font-medium text-slate-700">
                                             Wonkleboard Lite mk.1
                                         </span>
-                                        <span className="text-sm font-semibold text-blue-900">
+                                        <span className="text-sm font-semibold text-slate-900">
                                             1000Hz
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-blue-50">
-                                        <div className="h-full w-[12.5%] bg-linear-to-r from-blue-500 to-blue-600 transition-all" />
+                                    <div className="flex h-8 w-full overflow-hidden">
+                                        {/* 22px width + 2px margin = 24px for 1000Hz */}
+                                        {[...Array<number>(Math.ceil(896 / 24))].map((_, i) => (
+                                            <div
+                                                key={`wonkleboardLiteMk1-polling-rate-${i}`}
+                                                style={{
+                                                    animationDelay: `${(i + 1) * 10 * 24}ms`,
+                                                }}
+                                                className="animate-flipflop mx-px h-full max-w-[calc(24000px/1000-2px)] min-w-[calc(24000px/1000-2px)] rounded bg-slate-300"
+                                            />
+                                        ))}
                                     </div>
                                 </div>
                                 <div>
@@ -170,12 +200,21 @@ export default async function Home() {
                                         <span className="text-sm font-medium text-slate-700">
                                             Wonkleboard Pro mk.1
                                         </span>
-                                        <span className="text-sm font-semibold text-purple-900">
-                                            8000Hz ⚡
+                                        <span className="text-sm font-semibold text-slate-900">
+                                            8000Hz
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
-                                        <div className="h-full w-full bg-linear-to-r from-purple-500 to-pink-500 transition-all" />
+                                    <div className="flex h-8 w-full overflow-hidden">
+                                        {/* 1px width + 2px margin = 3px for 8000Hz */}
+                                        {[...Array<number>(Math.ceil(896 / 3))].map((_, i) => (
+                                            <div
+                                                key={`wonkleboardProMk1-polling-rate-${i}`}
+                                                style={{
+                                                    animationDelay: `${(i + 1) * 10 * 3}ms`,
+                                                }}
+                                                className="animate-flipflop mx-px h-full max-w-[calc(24000px/8000-2px)] min-w-[calc(24000px/8000-2px)] rounded bg-slate-300"
+                                            />
+                                        ))}
                                     </div>
                                 </div>
                             </div>
