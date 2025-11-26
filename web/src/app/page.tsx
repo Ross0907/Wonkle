@@ -151,7 +151,7 @@ export default async function Home() {
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkle tablet mk.1 Lite
+                                            Wonkleboard Lite mk.1
                                         </span>
                                         <span className="text-sm font-semibold text-blue-900">
                                             1000Hz
@@ -164,7 +164,7 @@ export default async function Home() {
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkle tablet mk.1 Pro
+                                            Wonkleboard Pro mk.1
                                         </span>
                                         <span className="text-sm font-semibold text-purple-900">
                                             8000Hz ⚡
@@ -210,7 +210,7 @@ export default async function Home() {
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkle tablet mk.1 Lite
+                                            Wonkleboard Lite mk.1
                                         </span>
                                         <span className="text-sm font-semibold text-purple-900">
                                             200 lpmm
@@ -223,7 +223,7 @@ export default async function Home() {
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkle tablet mk.1 Pro
+                                            Wonkleboard Pro mk.1
                                         </span>
                                         <span className="text-sm font-semibold text-purple-900">
                                             200 lpmm
@@ -269,7 +269,7 @@ export default async function Home() {
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkle tablet mk.1 Lite
+                                            Wonkleboard Lite mk.1
                                         </span>
                                         <span className="text-sm font-semibold text-purple-900">
                                             180 × 100 mm
@@ -285,7 +285,7 @@ export default async function Home() {
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkle tablet mk.1 Pro
+                                            Wonkleboard Pro mk.1
                                         </span>
                                         <span className="text-sm font-semibold text-purple-900">
                                             180 × 100 mm
@@ -314,7 +314,8 @@ export default async function Home() {
 
                     <div className="grid gap-8 lg:grid-cols-2">
                         <ShopItem
-                            name="Wonkle tablet mk.1 Lite"
+                            name="Wonkleboard Lite mk.1"
+                            href="/shop/wonkleboard-lite-mk1"
                             price="147.27"
                             pollingRate="1000Hz"
                             activeArea="180 × 100 mm"
@@ -322,7 +323,8 @@ export default async function Home() {
                             hoverHeight="15mm"
                         />
                         <ShopItem
-                            name="Wonkle tablet mk.1 Pro"
+                            name="Wonkleboard Pro mk.1"
+                            href="/shop/wonkleboard-pro-mk1"
                             price="247.27"
                             pollingRate="8000Hz"
                             activeArea="180 × 100 mm"

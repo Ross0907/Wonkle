@@ -4,16 +4,16 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Wonkle tablet mk.1 Lite",
+    title: "Wonkleboard Pro mk.1",
     description:
-        "High-performance osu! tablet with 1000Hz polling rate, 200 lpmm resolution, and 15mm hover height. Professional quality at an accessible price.",
+        "The ultimate osu! tablet with 8000Hz polling rate, 200 lpmm resolution, and 20mm hover height. Professional-grade performance for competitive players.",
 }
 
-export default async function Mk1LitePage() {
+export default async function WonkleboardProMk1() {
     return (
         <div className="w-full">
-            {/* Hero Section - Lead with value proposition */}
-            <section className="relative overflow-hidden bg-linear-to-br from-slate-50 via-blue-50 to-purple-50 px-4 pt-8 pb-4">
+            {/* Hero Section - Lead with emotion and value */}
+            <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-slate-50 px-4 pt-8 pb-4">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-8">
                         <Link
@@ -28,9 +28,10 @@ export default async function Mk1LitePage() {
 
                     <div className="animate-fade-in text-center">
                         <h1 className="mb-8 text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl md:text-7xl">
-                            Wonkle tablet mk.1
+                            Wonkleboard
                             <br />
-                            <span className="gradient-text">Lite</span>
+                            <span className="gradient-text">Pro</span>{" "}
+                            <span className="text-3xl">mk.1</span>
                         </h1>
 
                         {/* Social proof */}
@@ -44,11 +45,11 @@ export default async function Mk1LitePage() {
                         </div>
                         */}
 
-                        {/* Value-focused pricing */}
+                        {/* Reframed pricing - value anchor */}
                         {/* todo: re-enable
                         <div className="mb-2 flex flex-col items-center justify-center">
                             <div className="text-5xl font-bold text-slate-900">
-                                $147
+                                $247
                             </div>
                             <p className="mt-1 text-sm font-medium text-green-700">
                                 Launch special pricing
@@ -56,7 +57,7 @@ export default async function Mk1LitePage() {
                         </div>
                         */}
 
-                        {/* Primary CTA */}
+                        {/* Primary CTA - mailing list first (lower friction) */}
                         {/* todo: re-enable
                         <div className="mb-6 flex justify-center">
                             <div className="w-full max-w-md">
@@ -65,7 +66,7 @@ export default async function Mk1LitePage() {
                                 </p>
                                 <MailingListForm
                                     variant="compact"
-                                    source="product-tablet-mk1-lite"
+                                    source="product-tablet-mk1-pro"
                                 />
                             </div>
                         </div>
@@ -83,35 +84,36 @@ export default async function Mk1LitePage() {
                     </div>
                 </div>
 
-                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-linear-to-br from-slate-100 via-blue-50 to-transparent opacity-60 blur-3xl" />
+                <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-linear-to-br from-blue-100 via-purple-50 to-transparent opacity-60 blur-3xl" />
             </section>
 
-            {/* Benefits first - emotion before specs */}
+            {/* Benefits before specs - emotion before logic */}
             <section className="px-4 py-20">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-16 text-center">
                         <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-                            Pro-level performance
+                            Why players choose the Pro
                         </h2>
                         <p className="mx-auto max-w-2xl text-lg text-slate-600">
-                            Without the premium price tag
+                            Built for players who demand the absolute best
                         </p>
                     </div>
 
                     <div className="grid gap-8 lg:grid-cols-3">
+                        {/* Leading with user benefits */}
                         <div className="group rounded-2xl bg-linear-to-br from-blue-50 to-blue-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-blue-600 p-3">
-                                <Icon icon="mdi:speedometer" className="h-8 w-8 text-white" />
+                                <Icon icon="mdi:lightning-bolt" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
-                                1000Hz polling rate
+                                Never miss a beat
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                Smooth, responsive input for competitive play. Hit your patterns
-                                with confidence.
+                                8000Hz polling means your every move registers instantly. Hit
+                                streams and jumps you thought were impossible.
                             </p>
                             <p className="text-sm font-semibold text-blue-700">
-                                1ms response time vs 5ms standard
+                                0.125ms response time vs 5ms standard
                             </p>
                         </div>
 
@@ -120,37 +122,37 @@ export default async function Mk1LitePage() {
                                 <Icon icon="mdi:target-variant" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
-                                Precision you can feel
+                                Pixel-perfect control
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                200 lpmm resolution captures every movement accurately. Perfect for
-                                improving your aim and consistency.
+                                200 lpmm resolution captures micro-movements other tablets miss.
+                                Your aim, perfected.
                             </p>
                             <p className="text-sm font-semibold text-purple-700">
-                                High-precision tracking
+                                Professional-grade precision
                             </p>
                         </div>
 
                         <div className="group rounded-2xl bg-linear-to-br from-green-50 to-green-100/50 p-8 transition-all hover:shadow-lg">
                             <div className="mb-4 inline-flex rounded-xl bg-green-600 p-3">
-                                <Icon icon="mdi:wrench" className="h-8 w-8 text-white" />
+                                <Icon icon="mdi:tune-vertical" className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="mb-3 text-2xl font-bold text-slate-900">
-                                Make it yours
+                                Play your way
                             </h3>
                             <p className="mb-2 text-slate-600">
-                                Customize settings and tweak performance to match your style.
-                                Open-source firmware means full transparency and community control.
+                                20mm hover height accommodates any style: hover, drag, or tap. Fully
+                                customizable firmware adapts to you.
                             </p>
                             <p className="text-sm font-semibold text-green-700">
-                                Fully customizable
+                                Open-source and customizable
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Simplified specs */}
+            {/* Key specs - simplified, scannable */}
             <section id="specs" className="bg-slate-50 px-4 py-20">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-12 text-center">
@@ -162,9 +164,9 @@ export default async function Mk1LitePage() {
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                         <SpecCard
                             icon="mdi:speedometer"
-                            value="1000Hz"
+                            value="8000Hz"
                             label="Polling Rate"
-                            description="The tablet reports your pen position 1000 times per second. This professional-grade polling rate ensures smooth, responsive tracking for competitive gameplay with minimal input lag."
+                            description="The tablet reports your pen position 8000 times per second. That's 8× faster than standard tablets, ensuring every micro-movement is captured instantly with virtually zero latency."
                             color="blue"
                         />
 
@@ -186,21 +188,21 @@ export default async function Mk1LitePage() {
 
                         <SpecCard
                             icon="mdi:arrow-expand-vertical"
-                            value="15mm"
+                            value="20mm"
                             label="Hover Height"
-                            description="The pen works up to 15mm above the surface without touching. This generous range accommodates most playstyles, whether you prefer hovering or lifting between movements."
+                            description="The pen works up to 20mm above the surface without touching. This extended range gives you maximum flexibility, whether you hover lightly or lift higher between movements."
                             color="orange"
                         />
                     </div>
                 </div>
             </section>
 
-            {/* Comparison Section */}
-            <section className="px-4 py-20">
+            {/* Comparison Section - Decision making aid */}
+            <section className="bg-slate-50 px-4 py-20">
                 <div className="mx-auto max-w-4xl">
                     <div className="mb-12 text-center">
                         <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-                            Lite or Pro?
+                            Pro or Lite?
                         </h2>
                     </div>
 
@@ -212,14 +214,14 @@ export default async function Mk1LitePage() {
                                         <th className="p-6 text-left text-sm font-semibold text-slate-900">
                                             Feature
                                         </th>
-                                        <th className="bg-linear-to-br from-blue-100 to-blue-200 p-6 text-center text-sm font-semibold text-slate-900">
-                                            Lite{" "}
+                                        <th className="p-6 text-center text-sm font-semibold text-slate-900">
+                                            Lite
+                                        </th>
+                                        <th className="bg-linear-to-br from-purple-100 to-purple-200 p-6 text-center text-sm font-semibold text-slate-900">
+                                            Pro{" "}
                                             <span className="text-xs font-normal text-slate-700">
                                                 (You&apos;re here)
                                             </span>
-                                        </th>
-                                        <th className="p-6 text-center text-sm font-semibold text-slate-900">
-                                            Pro
                                         </th>
                                     </tr>
                                 </thead>
@@ -228,51 +230,53 @@ export default async function Mk1LitePage() {
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Polling Rate
                                         </td>
-                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="p-6 text-center text-sm text-slate-600">
                                             1000Hz
                                             <br />
-                                            <span className="text-xs font-normal text-slate-700">
-                                                Lite
-                                            </span>
+                                            <span className="text-xs">Fast</span>
                                         </td>
-                                        <td className="p-6 text-center text-sm text-slate-600">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             8000Hz
                                             <br />
-                                            <span className="text-xs">8× faster</span>
+                                            <span className="text-xs font-normal text-slate-700">
+                                                8× faster
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Hover Height
                                         </td>
-                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="p-6 text-center text-sm text-slate-600">
                                             15mm
                                         </td>
-                                        <td className="p-6 text-center text-sm text-slate-600">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             20mm
                                             <br />
-                                            <span className="text-xs">+33% range</span>
+                                            <span className="text-xs font-normal text-slate-700">
+                                                +33% range
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Best for
                                         </td>
-                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
-                                            All serious players
-                                        </td>
                                         <td className="p-6 text-center text-sm text-slate-600">
-                                            Top competitors
+                                            All players
+                                        </td>
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                            Serious competitors
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="p-6 text-sm font-medium text-slate-900">
                                             Price
                                         </td>
-                                        <td className="bg-linear-to-br from-blue-50 to-blue-100 p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="p-6 text-center text-sm font-semibold text-slate-900">
                                             $147
                                         </td>
-                                        <td className="p-6 text-center text-sm font-semibold text-slate-900">
+                                        <td className="bg-linear-to-br from-purple-50 to-purple-100 p-6 text-center text-sm font-semibold text-slate-900">
                                             $247
                                         </td>
                                     </tr>
@@ -283,17 +287,17 @@ export default async function Mk1LitePage() {
 
                     <div className="text-center">
                         <Link
-                            href="/shop/mk1pro"
+                            href="/shop/mk1lite"
                             className="inline-flex items-center gap-2 rounded-full border-2 border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-all hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
                         >
-                            View mk.1 Pro
+                            View mk.1 Lite
                             <Icon icon="mdi:arrow-right" className="h-5 w-5" />
                         </Link>
                     </div>
                 </div>
             </section>
 
-            {/* CTA with urgency */}
+            {/* CTA - Create urgency with FOMO */}
             {/* todo: re-enable
             <section className="bg-slate-900 px-4 py-20">
                 <div className="mx-auto max-w-4xl text-center">
@@ -306,12 +310,12 @@ export default async function Mk1LitePage() {
                     </h2>
                     <p className="mb-8 text-lg text-slate-300">
                         Get notified the moment we launch. Be among the first to
-                        experience the Lite.
+                        experience the Pro.
                     </p>
                     <div className="mb-6 flex justify-center">
                         <MailingListForm
                             variant="compact"
-                            source="product-tablet-mk1-lite-cta"
+                            source="product-tablet-mk1-pro-cta"
                         />
                     </div>
                     <p className="mb-8 text-sm text-slate-400">

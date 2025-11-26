@@ -24,6 +24,7 @@ function Box() {
 
 export default function ShopItem({
     name,
+    href,
     price,
     pollingRate,
     activeArea,
@@ -31,6 +32,7 @@ export default function ShopItem({
     hoverHeight,
 }: {
     name: string
+    href: string
     price: string
     pollingRate: string
     activeArea: string
@@ -115,7 +117,7 @@ export default function ShopItem({
                 </div>
 
                 <Link
-                    href={isPro ? "/shop/mk1pro" : "/shop/mk1lite"}
+                    href={href}
                     className="group/btn relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-slate-900 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-50 hover:scale-[1.02] hover:bg-slate-800 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
                 >
                     <span className="relative z-10">Learn more</span>

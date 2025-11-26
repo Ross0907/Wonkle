@@ -24,7 +24,7 @@ pub fn setup(usb: USB) {
             UsbDeviceBuilder::new(&bus_allocator, UsbVidPid(VENDOR_ID, PRODUCT_ID))
                 .strings(&[StringDescriptors::new(LangID::EN)
                     .manufacturer("Wonkle")
-                    .product("Wonkle tablet mk1. Lite")])
+                    .product("Wonkleboard Lite mk.1")])
                 .unwrap()
                 .build(),
         );
