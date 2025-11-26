@@ -224,6 +224,14 @@ export default async function Home() {
                         <div>
                             <h3 className="mb-6 text-2xl font-bold text-slate-900">Active Area</h3>
                             <div className="space-y-4">
+                                <div className="relative mx-auto aspect-square h-full max-h-[600px]">
+                                    <div className="absolute h-[calc(100%*300/300)] w-[calc(100%*300/300)] rounded-sm border-2 bg-purple-500"></div>
+                                    <div className="absolute h-[calc(100%*135/300)] w-[calc(100%*216/300)] rounded-sm border-2 bg-indigo-600"></div>
+                                    <div className="absolute h-[calc(100%*100/300)] w-[calc(100%*180/300)] rounded-sm border-2 bg-teal-600"></div>
+                                    <div className="absolute h-[calc(100%*98/300)] w-[calc(100%*157/300)] rounded-sm border-2 bg-slate-400"></div>
+                                    <div className="absolute h-[calc(100%*95/300)] w-[calc(100%*152/300)] rounded-sm border-2 bg-slate-300"></div>
+                                </div>
+
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
@@ -234,7 +242,10 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-[80.2222222222%] bg-slate-400 transition-all" />
+                                        <div
+                                            className="h-full bg-slate-300"
+                                            style={{ width: "calc(100% * 152 * 95 / 300 / 300)" }}
+                                        />
                                     </div>
                                 </div>
                                 <div>
@@ -247,38 +258,57 @@ export default async function Home() {
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-slate-100">
-                                        <div className="h-full w-[85.4777777778%] bg-slate-400 transition-all" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="mb-2 flex items-center justify-between">
-                                        <span className="text-sm font-medium text-slate-700">
-                                            Wonkleboard Lite mk.1
-                                        </span>
-                                        <span className="text-sm font-semibold text-purple-900">
-                                            180 × 100 mm
-                                        </span>
-                                    </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
                                         <div
-                                            className="h-full bg-linear-to-r from-purple-500 to-pink-500 transition-all"
-                                            style={{ width: "100%" }}
+                                            className="h-full bg-slate-400"
+                                            style={{ width: "calc(100% * 157 * 98 / 300 / 300)" }}
                                         />
                                     </div>
                                 </div>
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
                                         <span className="text-sm font-medium text-slate-700">
-                                            Wonkleboard Pro mk.1
+                                            Wonkleboard Lite & Pro
                                         </span>
-                                        <span className="text-sm font-semibold text-purple-900">
-                                            180 × 100 mm
+                                        <span className="text-sm font-semibold text-slate-900">
+                                            216 × 135 mm
                                         </span>
                                     </div>
                                     <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
                                         <div
-                                            className="h-full bg-linear-to-r from-purple-500 to-pink-500 transition-all"
-                                            style={{ width: "100%" }}
+                                            className="h-full bg-teal-500"
+                                            style={{ width: "calc(100% * 180 * 100 / 300 / 300)" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center justify-between">
+                                        <span className="text-sm font-medium text-slate-700">
+                                            Wacom CTL-680
+                                        </span>
+                                        <span className="text-sm font-semibold text-slate-900">
+                                            216 × 135 mm
+                                        </span>
+                                    </div>
+                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
+                                        <div
+                                            className="h-full bg-indigo-500"
+                                            style={{ width: "calc(100% * 216 * 135 / 300 / 300)" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="mb-2 flex items-center justify-between">
+                                        <span className="text-sm font-medium text-slate-700">
+                                            Wonkleboard X
+                                        </span>
+                                        <span className="text-sm font-semibold text-slate-900">
+                                            300 × 300 mm
+                                        </span>
+                                    </div>
+                                    <div className="h-8 w-full overflow-hidden rounded-lg bg-purple-50">
+                                        <div
+                                            className="h-full bg-purple-500"
+                                            style={{ width: "calc(100% * 300 * 300 / 300 / 300)" }}
                                         />
                                     </div>
                                 </div>
