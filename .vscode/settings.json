@@ -5,6 +5,10 @@
   "files.readonlyInclude": {
     "web/convex/_generated/*": true
   },
+  "files.associations": {
+    "*.svd": "xml",
+    "*.css": "tailwindcss"
+  },
 
   // Nix
   "nix.formatterPath": "nixfmt",
@@ -59,10 +63,6 @@
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-
-  "files.associations": {
-    "*.svd": "xml"
   },
 
   // Spelling
