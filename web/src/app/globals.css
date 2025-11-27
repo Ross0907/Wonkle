@@ -130,18 +130,3 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
-.animate-flipflop {
-    animation: flipflop 10s infinite;
-}
-
-@keyframes flipflop {
-    0% {
-        background-color: oklch(62.3% 0.214 259.815); /* blue-500 */
-    }
-
-    75%,
-    100% {
-        background-color: oklch(86.9% 0.022 252.894); /* slate-300 */
-    }
-}
