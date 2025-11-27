@@ -1,4 +1,5 @@
 import ShopItem from "@/components/shop/item"
+import cn from "@/lib/cn"
 import { Icon } from "@iconify/react"
 import Link from "next/link"
 import Marquee from "react-fast-marquee"
@@ -26,7 +27,12 @@ function PollingRateScroll({ _key, hz }: { _key: string; hz: number }) {
                         marginLeft: `${marginWidth / 2}px`,
                         marginRight: `${marginWidth / 2}px`,
                     }}
-                    className="h-8 rounded bg-blue-500 hover:bg-blue-800"
+                    className={cn(
+                        "h-8 rounded bg-slate-300 hover:bg-slate-400",
+                        hz >= 200 && "bg-slate-400 hover:bg-slate-500",
+                        hz >= 1000 && "bg-blue-500 hover:bg-blue-800",
+                        hz >= 8000 && "bg-fuchsia-600 hover:bg-fuchsia-950",
+                    )}
                 />
             ))}
         </Marquee>
