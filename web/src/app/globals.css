@@ -55,6 +55,10 @@ html {
     background-clip: content-box;
 }
 
+::selection {
+    @apply bg-neutral-800 text-neutral-50;
+}
+
 *:focus-visible {
     outline: 3px solid #2563eb;
     outline-offset: 2px;
