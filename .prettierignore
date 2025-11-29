@@ -1,5 +1,8 @@
 firmware/target/
 
+/docs/.vitepress/cache/
+/docs/.vitepress/dist/
+
 /pcb/fabrication-toolkit-options.json
 
 /web/.next/
