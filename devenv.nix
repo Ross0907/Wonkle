@@ -30,13 +30,7 @@ in
     javascript = {
       enable = true;
       package = pkgs.nodejs_24; # latest LTS
-
-      directory = "./web";
-
-      pnpm = {
-        enable = true;
-        install.enable = true;
-      };
+      pnpm.enable = true;
     };
 
     # https://devenv.sh/supported-languages/rust/
