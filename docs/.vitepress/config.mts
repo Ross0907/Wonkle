@@ -8,6 +8,10 @@ export default defineConfig({
     themeConfig: {
         logo: "/favicon.svg",
 
+        search: {
+            provider: "local",
+        },
+
         nav: [
             { text: "FAQ", link: "/faq" },
             { text: "Manual", link: "/manual" },
