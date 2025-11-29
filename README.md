@@ -29,7 +29,7 @@ The tablet is still under development. It will be released sometime during 2026.
 Welcome! Please read [`./CONTRIBUTING.md`][contributing] and join our
 [Discord Server][discord].
 
-## [Frequently Asked Questions][faq]
+## [Frequently Asked Questions](https://docs.wonkle.io/faq.html)
 
 ## Status and roadmap
 
@@ -40,7 +40,6 @@ it until we have the final product.
 [discord]: https://discord.gg/h27rwcBn73
 [opencollective]: https://opencollective.com/wonkle
 [license]: https://github.com/wonkleio/wonkle/blob/dev/LICENSE
-[faq]: https://github.com/wonkleio/wonkle/blob/dev/FAQ.md
 [contributing]: https://github.com/wonkleio/wonkle/blob/dev/CONTRIBUTING.md
 [cth480]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B15
 [ctl472]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B18
