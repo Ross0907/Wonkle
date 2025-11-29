@@ -4,7 +4,20 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
     title: "Wonkle",
     description: "Wonkle documentation & blog",
-    head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+    head: [
+        ["link", { rel: "icon", href: "/favicon.svg" }],
+        [
+            "script",
+            {
+                defer: "",
+                src: "https://rybbit.pompy.dev/api/script.js",
+                "data-site-id": "ac57acf9b33e",
+            },
+        ],
+    ],
+    sitemap: {
+        hostname: "https://docs.wonkle.io",
+    },
     themeConfig: {
         logo: "/favicon.svg",
 
