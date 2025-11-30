@@ -44,7 +44,10 @@ export default defineConfig({
             "/docs/": [
                 {
                     text: "Documentation",
-                    items: [{ text: "Index", link: "/docs" }],
+                    items: [
+                        { text: "Index", link: "/docs" },
+                        { text: "Contribution guide", link: "/docs/contribution-guide" },
+                    ],
                 },
             ],
 
