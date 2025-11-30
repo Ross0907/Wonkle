@@ -4,7 +4,6 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
     title: "Wonkle",
     description: "Wonkle documentation & blog",
-    cleanUrls: true,
     head: [
         ["link", { rel: "icon", href: "/favicon.svg" }],
         [

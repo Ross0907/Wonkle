@@ -15,4 +15,4 @@ schematics, etc. are available under
 [OSI-Approved Software and Hardware Licenses](https://opensource.org/licenses). We welcome everyone
 to contribute and join us in our quest to make the best hardware for our fellow osu! players.
 
-## [Frequently Asked Questions](https://docs.wonkle.io/faq)
+## [Frequently Asked Questions](https://docs.wonkle.io/faq.html)
