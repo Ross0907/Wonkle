@@ -8,39 +8,11 @@
   src="https://avatars.githubusercontent.com/u/217714136?s=128&v=4"
 />
 
-[![Discord invite](https://dcbadge.limes.pink/api/server/h27rwcBn73)][discord]
-[![OpenCollective](https://img.shields.io/badge/_-opencollective-gray?style=for-the-badge&logo=opencollective)][opencollective]
+[![Discord invite](https://dcbadge.limes.pink/api/server/h27rwcBn73)](https://discord.com/invite/h27rwcBn73)
 
-Wonkle builds everything in the open under the Open Source
-[MIT software license][license].\
-Everyone is welcomed to contribute and join us in our quest to make the best
-devices for our fellow osu! players.\
-If you'd also like to financially contribute to the project, you may do so in
-our [OpenCollective page][opencollective].
+Wonkle builds gaming hardware such as tablets and keypads for osu! players. Source code, 3D models,
+schematics, etc. are available under
+[OSI-Approved Software and Hardware Licenses](https://opensource.org/licenses). We welcome everyone
+to contribute and join us in our quest to make the best hardware for our fellow osu! players.
 
-## Okay, I'm hooked
-
-### Where can I buy the tablet?
-
-The tablet is still under development. It will be released sometime during 2026.
-
-### I want help make the tablet
-
-Welcome! Please read [`./CONTRIBUTING.md`][contributing] and join our
-[Discord Server][discord].
-
-## [Frequently Asked Questions](https://docs.wonkle.io/faq.html)
-
-## Status and roadmap
-
-The project is still in early development phase.
-We are working hard to get the first prototype of the board so we can iterate on
-it until we have the final product.
-
-[discord]: https://discord.gg/h27rwcBn73
-[opencollective]: https://opencollective.com/wonkle
-[license]: https://github.com/wonkleio/wonkle/blob/dev/LICENSE
-[contributing]: https://github.com/wonkleio/wonkle/blob/dev/CONTRIBUTING.md
-[cth480]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B15
-[ctl472]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B18
-[ptk470]: https://docs.google.com/spreadsheets/d/125LNzGmidy1gagwYUt12tRhrNdrWFHhWon7kxWY7iWU/edit?gid=854129046#gid=854129046&range=B65
+## [Frequently Asked Questions](https://docs.wonkle.io/faq)
