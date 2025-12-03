@@ -21,7 +21,7 @@ export default function Footer() {
                     <div className="flex items-center gap-4">
                         <Link
                             title="Join our Discord community"
-                            href="https://discord.gg/h27rwcBn73"
+                            href="https://discord.com/invite/h27rwcBn73"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group flex h-12 w-12 items-center justify-center rounded-full bg-white text-slate-600 shadow-sm transition-all hover:bg-[#5865F2] hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"

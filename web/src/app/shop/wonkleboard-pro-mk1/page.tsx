@@ -322,7 +322,7 @@ export default async function WonkleboardProMk1() {
                         Plus: Connect with osu! players in our Discord community
                     </p>
                     <a
-                        href="https://discord.gg/h27rwcBn73"
+                        href="https://discord.com/invite/h27rwcBn73"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 rounded-full bg-[#5865F2] px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#4752C4] hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"

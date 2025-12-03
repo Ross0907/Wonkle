@@ -11,7 +11,7 @@ export default async function Page({}: { params: Promise<{ product: string }> })
                 We&apos;re still building this page. In the meantime, why not join our{" "}
                 <Link
                     className="inline-flex items-center gap-1 font-semibold text-blue-600 underline decoration-2 underline-offset-2 transition-colors hover:text-blue-700"
-                    href="https://discord.gg/h27rwcBn73"
+                    href="https://discord.com/invite/h27rwcBn73"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

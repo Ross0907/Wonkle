@@ -62,7 +62,7 @@ export default async function Home() {
                                 <Icon icon="mdi:arrow-right" className="ml-2 h-5 w-5" />
                             </a>
                             <a
-                                href="https://discord.gg/h27rwcBn73"
+                                href="https://discord.com/invite/h27rwcBn73"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center rounded-full border-2 border-slate-300 bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all hover:border-slate-400 hover:bg-slate-50 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
@@ -358,7 +358,7 @@ export default async function Home() {
                         Connect with players / get the latest news / contribute to the project
                     </p>
                     <a
-                        href="https://discord.gg/h27rwcBn73"
+                        href="https://discord.com/invite/h27rwcBn73"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center rounded-full bg-[#5865F2] px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#4752C4] hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"

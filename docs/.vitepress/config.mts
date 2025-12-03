@@ -59,7 +59,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: "discord", link: "https://discord.gg/h27rwcBn73" },
+            { icon: "discord", link: "https://discord.com/invite/h27rwcBn73" },
             { icon: "bluesky", link: "https://bsky.app/profile/wonkle.io" },
             { icon: "github", link: "https://github.com/wonkleio/wonkle" },
         ],
