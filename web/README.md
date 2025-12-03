@@ -1,12 +1,5 @@
 # wonkle.io
 
-## Must read
-
-- https://nextjs.org/docs
-- https://docs.convex.dev
-- https://tailwindcss.com/docs
-- https://zod.dev
-
 ## Setup
 
 1. [Setup devenv](https://devenv.sh/getting-started)
