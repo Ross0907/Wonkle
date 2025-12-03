@@ -50,7 +50,7 @@ export default async function Home() {
                         </h1>
                         <p className="mx-auto mb-12 max-w-2xl text-lg text-slate-600 sm:text-xl md:text-2xl">
                             Tablets, keypads, pens and more. <br />
-                            Made by osu! players, for osu! players.
+                            Made by gamers, for gamers.
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: Wonkle
-  tagline: Made by osu! players, for osu! plyers.
+  tagline: Made by gamers, for gamers.
   image:
     src: /favicon.svg
     alt: Wonkle logo

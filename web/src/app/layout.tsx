@@ -14,7 +14,7 @@ const notoSans = Noto_Sans({
 
 export const metadata: Metadata = {
     title: "Wonkle",
-    description: "Made by osu! players, for osu! players.",
+    description: "Made by gamers, for gamers.",
 }
 
 export default function RootLayout({

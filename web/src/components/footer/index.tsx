@@ -14,7 +14,7 @@ export default function Footer() {
                             Wonkle • /ˈwɑːŋkəl/
                             <PronounceButton />
                         </p>
-                        <p className="text-sm text-slate-600">Made with ❤️ by osu! players</p>
+                        <p className="text-sm text-slate-600">Made with ❤️ by gamers</p>
                     </div>
 
                     {/* Social Links */}

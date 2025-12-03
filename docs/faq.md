@@ -4,9 +4,9 @@
 
 Wonkle is an LLC (Limited Liability Company) based in South Korea founded by
 [pomp](https://osu.ppy.sh/users/15691003) that builds gaming hardware such as tablets and keypads
-for osu! players. It builds everything in the open under
+for games like osu! and various FPS games. It builds everything in the open under
 [OSI-Approved Hardware and Software Licenses](https://opensource.org/licenses).
-It has a community of builders that together build the best hardware for osu! players.
+Wonkle is also a community of builders that together build the best hardware for gamers.
 
 ## When will (Product name) be available?
 
