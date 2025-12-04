@@ -2,12 +2,12 @@ import { ConvexClientProvider } from "@/components/convex-client-provider"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
 import type { Metadata } from "next"
-import { Noto_Sans } from "next/font/google"
+import { Inter } from "next/font/google"
 import Script from "next/script"
 
 import "./globals.css"
 
-const notoSans = Noto_Sans({
+const inter = Inter({
     subsets: ["latin"],
     display: "swap",
 })
@@ -28,9 +28,7 @@ export default function RootLayout({
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
             </head>
 
-            <body
-                className={`${notoSans.className} min-h-screen bg-white text-slate-900 antialiased`}
-            >
+            <body className={`${inter.className} min-h-screen bg-white text-slate-900 antialiased`}>
                 <ConvexClientProvider>
                     <div className="flex min-h-screen flex-col">
                         <Navbar />
