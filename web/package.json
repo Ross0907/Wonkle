@@ -1,0 +1,49 @@
+{
+    "name": "wonkle",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently --names 'Frontend, Backend' -c green,blue 'pnpm dev:frontend' 'pnpm dev:backend'",
+        "dev:frontend": "next dev",
+        "dev:backend": "convex dev",
+        "build": "convex codegen && next build",
+        "build:frontend": "next build",
+        "start": "next start",
+        "lint": "eslint"
+    },
+    "dependencies": {
+        "@convex-dev/auth": "0.0.90",
+        "@convex-dev/rate-limiter": "0.3.0",
+        "@react-three/drei": "10.7.7",
+        "@react-three/fiber": "9.4.0",
+        "@t3-oss/env-nextjs": "0.13.8",
+        "canvas-confetti": "1.9.4",
+        "clsx": "^2.1.1",
+        "convex": "1.29.3",
+        "next": "16.0.7",
+        "react": "19.2.1",
+        "react-dom": "19.2.1",
+        "react-fast-marquee": "1.6.5",
+        "tailwind-merge": "^3.4.0",
+        "three": "0.181.2",
+        "zod": "4.1.13"
+    },
+    "devDependencies": {
+        "@convex-dev/eslint-plugin": "1.0.0",
+        "@eslint/eslintrc": "3.3.1",
+        "@iconify/react": "6.0.2",
+        "@next/eslint-plugin-next": "16.0.3",
+        "@tailwindcss/postcss": "4.1.17",
+        "@types/canvas-confetti": "1.9.0",
+        "@types/node": "24.10.1",
+        "@types/react": "19.2.6",
+        "@types/react-dom": "19.2.3",
+        "@types/three": "0.181.0",
+        "concurrently": "9.2.1",
+        "eslint": "9.39.1",
+        "eslint-config-next": "16.0.3",
+        "eslint-plugin-react-hooks": "7.0.1",
+        "tailwindcss": "4.1.17",
+        "typescript": "5.9.3"
+    }
+}

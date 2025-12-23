@@ -12,7 +12,7 @@ in
       nixd # Nix LSP
       nixfmt-rfc-style # Nix formatter
 
-      probe-rs # for firmware flashing and debugging
+      probe-rs-tools # for firmware flashing and debugging
       usbutils # lsusb, usb-devices, and usbhid-dump
     ]
     ++ deps;
@@ -26,6 +26,13 @@ in
   };
 
   languages = {
+    # https://devenv.sh/supported-languages/javascript/
+    javascript = {
+      enable = true;
+      package = pkgs.nodejs_24; # latest LTS
+      pnpm.enable = true;
+    };
+
     # https://devenv.sh/supported-languages/rust/
     rust = {
       enable = true;

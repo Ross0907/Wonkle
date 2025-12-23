@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json.schemastore.org/prettierrc",
+    "semi": false,
+
+    "tabWidth": 4,
+    "printWidth": 100,
+    "overrides": [
+        {
+            "files": ["*.md", "*.yml"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ],
+
+    "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+
+    "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}

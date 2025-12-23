@@ -1,6 +1,6 @@
-use crate::hal::otg_fs::{USB, UsbBus};
 use crate::tablet::Report;
 use cortex_m::interrupt::free as disable_interrupts;
+use stm32f4xx_hal::otg_fs::{USB, UsbBus};
 use usb_device::{bus::UsbBusAllocator, prelude::*};
 use usbd_hid::{descriptor::generator_prelude::*, hid_class::HIDClass};
 
@@ -23,8 +23,8 @@ pub fn setup(usb: USB) {
         USB_BUS = Some(
             UsbDeviceBuilder::new(&bus_allocator, UsbVidPid(VENDOR_ID, PRODUCT_ID))
                 .strings(&[StringDescriptors::new(LangID::EN)
-                    .manufacturer("Pompyboard")
-                    .product("Pompyboard Prototype")])
+                    .manufacturer("Wonkle")
+                    .product("Wonkleboard Lite mk.1")])
                 .unwrap()
                 .build(),
         );
