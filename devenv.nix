@@ -10,7 +10,7 @@ in
     with pkgs;
     [
       nixd # Nix LSP
-      nixfmt-rfc-style # Nix formatter
+      nixfmt # Nix formatter
 
       probe-rs-tools # for firmware flashing and debugging
       usbutils # lsusb, usb-devices, and usbhid-dump
