@@ -43,7 +43,7 @@ export default async function WonkleboardProMk1() {
 
             <section className="border-b-4 bg-teal-50 px-4 py-16">
                 <div className="mx-auto flex h-240 max-w-6xl items-center justify-center">
-                    <p className="text-center">
+                    <div className="text-center">
                         <div className="text-9xl">🚧</div>
                         <h2 className="pt-4 pb-10 text-4xl font-black">UNDER CONSTRUCTION</h2>
 
@@ -53,7 +53,7 @@ export default async function WonkleboardProMk1() {
                             height={721}
                             alt="A 4 panel meme of Mr. Bean getting progressively more bored as he waits for something/someone. In the first panel he stands with hands on hips looking into the distance. In the second panel he checks his wristwatch. In the third panel he sits on the grass. In the last panel he lies flat on his back in the grass."
                         />
-                    </p>
+                    </div>
                 </div>
             </section>
         </div>
