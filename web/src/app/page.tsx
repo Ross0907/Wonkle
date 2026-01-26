@@ -1,4 +1,3 @@
-import MailingListForm from "@/components/mailing-list-form"
 import ShopItem from "@/components/shop/item"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -327,14 +326,6 @@ export default async function Home() {
                             activeArea="180 × 100 mm"
                         />
                     </div>
-                </div>
-            </section>
-
-            <section className="border-b-4 bg-blue-600 py-16 text-blue-50">
-                <div className="mx-auto text-center">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight">Stay Updated</h2>
-                    <p className="mb-6 text-lg">Get notified about product launches and updates</p>
-                    <MailingListForm source="homepage" />
                 </div>
             </section>
         </div>

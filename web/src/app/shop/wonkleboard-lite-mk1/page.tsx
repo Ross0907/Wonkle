@@ -1,6 +1,8 @@
-import MailingListForm from "@/components/mailing-list-form"
+import { Button } from "@/components/ui/button"
+import mrBranWaiting from "@/res/mr_bean_waiting.avif"
 import { Icon } from "@iconify/react"
 import type { Metadata } from "next"
+import Image from "next/image"
 
 export const metadata: Metadata = {
     title: "Wonkleboard Lite mk.1",
@@ -23,11 +25,16 @@ export default async function WonkleboardLiteMk1() {
 
                         <div className="flex justify-center">
                             <div className="w-full">
-                                <div className="mb-4 flex items-center justify-center gap-2 text-sm text-slate-600">
-                                    <Icon icon="lucide:users" className="size-5 text-blue-600" />
-                                    <span>Join players on the waitlist</span>
-                                </div>
-                                <MailingListForm source="product-tablet-mk1-lite" />
+                                <Button asChild className="bg-[#5865F2] text-white">
+                                    <a
+                                        href="https://discord.com/invite/h27rwcBn73"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Join the waiting room
+                                        <Icon icon="simple-icons:discord" className="ml-2 size-5" />
+                                    </a>
+                                </Button>
                             </div>
                         </div>
                     </div>
@@ -35,23 +42,18 @@ export default async function WonkleboardLiteMk1() {
             </section>
 
             <section className="border-b-4 bg-teal-50 px-4 py-16">
-                <div className="flex h-96 max-w-6xl items-center justify-center">
+                <div className="mx-auto flex h-[960px] max-w-6xl items-center justify-center">
                     <p className="text-center">
-                        <div className="pb-4 text-9xl">🚧</div>
-                        <h2 className="text-6xl font-black">UNDER CONSTRUCTION</h2>
-                    </p>
-                </div>
-            </section>
+                        <div className="text-9xl">🚧</div>
+                        <h2 className="pt-4 pb-10 text-4xl font-black">UNDER CONSTRUCTION</h2>
 
-            <section className="border-b-4 bg-blue-600 py-16 text-blue-50">
-                <div className="mx-auto text-center">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight">
-                        Don&apos;t miss launch day
-                    </h2>
-                    <p className="mb-6 text-lg">Get notified the moment we launch</p>
-                    <div className="mb-6 flex justify-center">
-                        <MailingListForm source="product-tablet-mk1-lite-cta" />
-                    </div>
+                        <Image
+                            src={mrBranWaiting}
+                            width={860}
+                            height={721}
+                            alt="A 4 panel meme of Mr. Bean getting progressively more bored as he waits for something/someone. In the first panel he stands with hands on hips looking into the distance. In the second panel he checks his wristwatch. In the third panel he sits on the grass. In the last panel he lies flat on his back in the grass."
+                        />
+                    </p>
                 </div>
             </section>
         </div>
