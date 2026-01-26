@@ -1,4 +1,11 @@
-import { Icon } from "@iconify/react"
+import {
+    SiBluesky,
+    SiDiscord,
+    SiGithub,
+    SiOpencollective,
+    SiProtonmail,
+} from "@icons-pack/react-simple-icons"
+import "lucide-react"
 
 import { Button } from "../ui/button"
 import PronounceButton from "./pronounce-button"
@@ -18,7 +25,7 @@ export default function Footer() {
                     </div>
 
                     {/* Social Links */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 [&_svg]:size-6">
                         <Button
                             asChild
                             className="flex size-14 items-center justify-center bg-[#5865F2] text-white"
@@ -30,10 +37,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 aria-label="Discord"
                             >
-                                <Icon
-                                    icon="simple-icons:discord"
-                                    style={{ width: "24px", height: "24px" }}
-                                />
+                                <SiDiscord size={24} />
                             </a>
                         </Button>
 
@@ -48,10 +52,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 aria-label="Open Collective"
                             >
-                                <Icon
-                                    icon="simple-icons:opencollective"
-                                    style={{ width: "24px", height: "24px" }}
-                                />
+                                <SiOpencollective size={24} />
                             </a>
                         </Button>
 
@@ -66,10 +67,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 aria-label="BlueSky"
                             >
-                                <Icon
-                                    icon="simple-icons:bluesky"
-                                    style={{ width: "24px", height: "24px" }}
-                                />
+                                <SiBluesky size={24} />
                             </a>
                         </Button>
 
@@ -84,10 +82,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 aria-label="GitHub"
                             >
-                                <Icon
-                                    icon="simple-icons:github"
-                                    style={{ width: "24px", height: "24px" }}
-                                />
+                                <SiGithub size={24} />
                             </a>
                         </Button>
 
@@ -100,10 +95,7 @@ export default function Footer() {
                                 href="mailto:pompydev@proton.me"
                                 aria-label="Email"
                             >
-                                <Icon
-                                    icon="simple-icons:protonmail"
-                                    style={{ width: "24px", height: "24px" }}
-                                />
+                                <SiProtonmail size={24} />
                             </a>
                         </Button>
                     </div>

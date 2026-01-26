@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { Icon } from "@iconify/react"
+import { ExternalLink } from "lucide-react"
 import Link from "next/link"
 import * as React from "react"
 
@@ -23,7 +23,7 @@ function A({
             {...(external && { target: "_blank", rel: "noopener noreferrer" })}
         >
             {props.children}
-            {external && <Icon icon="lucide:external-link" className="h-4 w-4" />}
+            {external && <ExternalLink size={16} />}
         </E>
     )
 }

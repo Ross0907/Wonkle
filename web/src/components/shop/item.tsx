@@ -1,9 +1,9 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { Icon } from "@iconify/react"
 import { OrbitControls, useTexture } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
+import { ArrowRight, ChevronsLeftRightEllipsis, Ruler } from "lucide-react"
 import Link from "next/link"
 import { NearestFilter } from "three"
 
@@ -77,7 +77,7 @@ export default function ShopItem({
                         highlight === "pollingRate" && "bg-yellow-200",
                     )}
                 >
-                    <Icon className="mr-1 size-5" icon="lucide:chevrons-left-right-ellipsis" />
+                    <ChevronsLeftRightEllipsis size={20} className="mr-1" />
                     <span className="text-xs font-medium">Polling Rate</span>
                     <span className="font-bold">{pollingRate}</span>
                 </div>
@@ -88,7 +88,7 @@ export default function ShopItem({
                         highlight === "activeArea" && "bg-yellow-200",
                     )}
                 >
-                    <Icon className="mr-1 size-5" icon="lucide:ruler" />
+                    <Ruler size={20} className="mr-1" />
                     <span className="text-xs font-medium">Active Area</span>
                     <div className="font-bold">{activeArea}</div>
                 </div>
@@ -103,10 +103,7 @@ export default function ShopItem({
                 <Button asChild>
                     <Link href={href}>
                         Learn more
-                        <Icon
-                            icon="lucide:arrow-right"
-                            className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1"
-                        />
+                        <ArrowRight />
                     </Link>
                 </Button>
             </CardFooter>

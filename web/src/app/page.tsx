@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { A } from "@/components/ui/link"
 import { cn } from "@/lib/utils"
-import { Icon } from "@iconify/react"
+import { SiDiscord } from "@icons-pack/react-simple-icons"
+import { ArrowRight, ChevronDown, ChevronUp, GitMerge, PiggyBank, Rocket } from "lucide-react"
 import Marquee from "react-fast-marquee"
 
 function PollingRateScroll({ _key, hz }: { _key: string; hz: number }) {
@@ -60,7 +61,7 @@ export default async function Home() {
                             <Button asChild>
                                 <a href="#products">
                                     Explore products
-                                    <Icon icon="lucide:arrow-right" className="ml-2 size-5" />
+                                    <ArrowRight className="ml-2" />
                                 </a>
                             </Button>
                             <Button asChild variant="neutral">
@@ -70,7 +71,7 @@ export default async function Home() {
                                     rel="noopener noreferrer"
                                 >
                                     Join our Community
-                                    <Icon icon="simple-icons:discord" className="ml-2 size-5" />
+                                    <SiDiscord className="ml-2" />
                                 </a>
                             </Button>
                         </div>
@@ -88,7 +89,7 @@ export default async function Home() {
                         <Card className="bg-secondary-background">
                             <CardHeader>
                                 <CardTitle>
-                                    <Icon icon="lucide:rocket" className="mb-4 size-8" />
+                                    <Rocket size={32} className="mb-4" />
                                     <h3>We&apos;re Fast</h3>
                                 </CardTitle>
                             </CardHeader>
@@ -102,7 +103,7 @@ export default async function Home() {
                         <Card className="bg-secondary-background">
                             <CardHeader>
                                 <CardTitle>
-                                    <Icon icon="lucide:piggy-bank" className="mb-4 size-8" />
+                                    <PiggyBank size={32} className="mb-4" />
                                     <h3>We&apos;re Cheap</h3>
                                 </CardTitle>
                             </CardHeader>
@@ -117,7 +118,7 @@ export default async function Home() {
                         <Card className="bg-secondary-background">
                             <CardHeader>
                                 <CardTitle>
-                                    <Icon icon="lucide:git-merge" className="mb-4 size-8" />
+                                    <GitMerge size={32} className="mb-4" />
                                     <h3>We&lsquo;re Open</h3>
                                 </CardTitle>
                             </CardHeader>
@@ -150,14 +151,8 @@ export default async function Home() {
                             <h3 className="mb-6 text-2xl font-bold">Polling Rate</h3>
                             <div className="relative space-y-4 py-2">
                                 <div className="absolute top-1/2 left-1/2 z-10 h-full w-0.5 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-black opacity-50">
-                                    <Icon
-                                        className="absolute -top-5 left-1/2 -translate-x-1/2 opacity-100"
-                                        icon="mdi-triangle-down"
-                                    />
-                                    <Icon
-                                        className="absolute -bottom-5 left-1/2 -translate-x-1/2 opacity-100"
-                                        icon="mdi-triangle"
-                                    />
+                                    <ChevronDown className="absolute -top-5 left-1/2 -translate-x-1/2 opacity-100" />
+                                    <ChevronUp className="absolute -bottom-5 left-1/2 -translate-x-1/2 opacity-100" />
                                 </div>
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">

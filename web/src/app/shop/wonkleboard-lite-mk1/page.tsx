@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import mrBranWaiting from "@/res/mr_bean_waiting.avif"
-import { Icon } from "@iconify/react"
+import { SiDiscord } from "@icons-pack/react-simple-icons"
 import type { Metadata } from "next"
 import Image from "next/image"
 
@@ -32,7 +32,7 @@ export default async function WonkleboardLiteMk1() {
                                         rel="noopener noreferrer"
                                     >
                                         Join the waiting room
-                                        <Icon icon="simple-icons:discord" className="ml-2 size-5" />
+                                        <SiDiscord className="ml-2" />
                                     </a>
                                 </Button>
                             </div>
