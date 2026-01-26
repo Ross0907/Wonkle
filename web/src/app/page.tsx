@@ -310,20 +310,39 @@ export default async function Home() {
                         Products
                     </h2>
 
-                    <div className="flex w-full flex-col items-center justify-center gap-8 lg:flex-row">
+                    <div className="flex w-full flex-col items-center justify-center gap-8 xl:flex-row">
                         <ShopItem
-                            name="Wonkleboard Lite mk.1"
+                            category="Wonkleboard"
+                            model="Lite"
+                            rev="mk.1"
+                            nick="cheap boi"
                             href="/shop/wonkleboard-lite-mk1"
                             price="147.27"
                             pollingRate="1000Hz"
                             activeArea="180 × 100 mm"
+                            highlight="price"
                         />
                         <ShopItem
-                            name="Wonkleboard Pro mk.1"
+                            category="Wonkleboard"
+                            model="Pro"
+                            rev="mk.1"
+                            nick="quick boi"
                             href="/shop/wonkleboard-pro-mk1"
                             price="247.27"
                             pollingRate="8000Hz"
                             activeArea="180 × 100 mm"
+                            highlight="pollingRate"
+                        />
+                        <ShopItem
+                            category="Wonkleboard"
+                            model="X"
+                            rev="mk.1"
+                            nick="big boi"
+                            href="/shop/wonkleboard-x-mk1"
+                            price="247.27"
+                            pollingRate="1000Hz"
+                            activeArea="300 × 300 mm"
+                            highlight="activeArea"
                         />
                     </div>
                 </div>

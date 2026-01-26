@@ -1,5 +1,6 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { Icon } from "@iconify/react"
 import { OrbitControls, useTexture } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
@@ -7,7 +8,7 @@ import Link from "next/link"
 import { NearestFilter } from "three"
 
 import { Button } from "../ui/button"
-import { Card, CardContent } from "../ui/card"
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card"
 import img from "./streamline-pixel--interface-essential-question-help-square.png"
 
 function Box() {
@@ -25,75 +26,90 @@ function Box() {
 }
 
 export default function ShopItem({
-    name,
+    category,
+    model,
+    rev,
+    nick,
     href,
-    price,
+    highlight,
     pollingRate,
     activeArea,
+    price,
 }: {
-    name: string
+    category: string
+    model: string
+    rev: string
+    nick: string
     href: string
-    price: string
+    highlight: "pollingRate" | "activeArea" | "price"
     pollingRate: string
     activeArea: string
+    price: string
 }) {
     return (
-        <Card className="bg-secondary-background w-full max-w-96 p-0">
-            <CardContent className="p-0">
-                <div className="h-64 bg-linear-to-b from-pink-100 to-transparent">
-                    <Canvas camera={{ position: [3, 3, 3], fov: 25 }}>
-                        <ambientLight intensity={3} />
-                        <OrbitControls
-                            enableZoom={false}
-                            rotateSpeed={0.5}
-                            autoRotate
-                            autoRotateSpeed={0.2}
-                        />
-                        <Box />
-                    </Canvas>
+        <Card className="bg-secondary-background h-135 w-96 gap-0 pt-0">
+            <div className="h-64 bg-linear-to-b from-pink-100 to-transparent">
+                <Canvas camera={{ position: [3, 3, 3], fov: 25 }}>
+                    <ambientLight intensity={3} />
+                    <OrbitControls
+                        enableZoom={false}
+                        rotateSpeed={0.5}
+                        autoRotate
+                        autoRotateSpeed={0.2}
+                    />
+                    <Box />
+                </Canvas>
+            </div>
+
+            <CardHeader className="pb-6">
+                <h3 className="text-2xl font-bold">
+                    {category} <span className="text-blue-500">{model}</span> {rev}
+                </h3>
+                <span className="text-slate-500" style={{ textDecorationSkipInk: "none" }}>
+                    {nick}
+                </span>
+            </CardHeader>
+
+            <CardContent className="flex grow flex-col gap-3">
+                <div
+                    className={cn(
+                        "flex w-fit items-center gap-1 px-2",
+                        highlight === "pollingRate" && "bg-yellow-200",
+                    )}
+                >
+                    <Icon className="mr-1 size-5" icon="lucide:chevrons-left-right-ellipsis" />
+                    <span className="text-xs font-medium">Polling Rate</span>
+                    <span className="font-bold">{pollingRate}</span>
                 </div>
 
-                <div className="p-6">
-                    <div className="mb-6 flex justify-between gap-4">
-                        <div>
-                            <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-                                {name}
-                            </h3>
-                        </div>
-                    </div>
-
-                    <div className="mb-6 flex flex-col gap-3 *:duration-100">
-                        <div className="flex items-center gap-2">
-                            <Icon className="h-5 w-5" icon="lucide:chevrons-left-right-ellipsis" />
-                            <span className="text-xs font-medium">Polling Rate</span>
-                            <span className="font-bold">{pollingRate}</span>
-                        </div>
-
-                        <div className="flex items-center gap-2">
-                            <Icon className="h-5 w-5" icon="lucide:ruler" />
-                            <span className="text-xs font-medium">Active Area</span>
-                            <div className="font-bold">{activeArea}</div>
-                        </div>
-                    </div>
-
-                    <div className="mt-12 flex justify-between">
-                        <div className="text-right">
-                            <span className="text-3xl font-bold text-slate-900">{price}</span>
-                            <span className="text-xs text-slate-500">USD</span>
-                        </div>
-
-                        <Button asChild className="">
-                            <Link href={href}>
-                                Learn more
-                                <Icon
-                                    icon="lucide:arrow-right"
-                                    className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1"
-                                />
-                            </Link>
-                        </Button>
-                    </div>
+                <div
+                    className={cn(
+                        "flex w-fit items-center gap-1 px-2",
+                        highlight === "activeArea" && "bg-yellow-200",
+                    )}
+                >
+                    <Icon className="mr-1 size-5" icon="lucide:ruler" />
+                    <span className="text-xs font-medium">Active Area</span>
+                    <div className="font-bold">{activeArea}</div>
                 </div>
             </CardContent>
+
+            <CardFooter className="flex items-end justify-between">
+                <div className={cn("px-2", highlight === "price" && "bg-yellow-200")}>
+                    <span className="text-3xl font-bold text-slate-900">{price}</span>
+                    <span className="text-xs text-slate-500">USD</span>
+                </div>
+
+                <Button asChild>
+                    <Link href={href}>
+                        Learn more
+                        <Icon
+                            icon="lucide:arrow-right"
+                            className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1"
+                        />
+                    </Link>
+                </Button>
+            </CardFooter>
         </Card>
     )
 }
