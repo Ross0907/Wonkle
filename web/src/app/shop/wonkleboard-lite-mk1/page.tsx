@@ -42,7 +42,7 @@ export default async function WonkleboardLiteMk1() {
             </section>
 
             <section className="border-b-4 bg-teal-50 px-4 py-16">
-                <div className="mx-auto flex h-[960px] max-w-6xl items-center justify-center">
+                <div className="mx-auto flex h-240 max-w-6xl items-center justify-center">
                     <p className="text-center">
                         <div className="text-9xl">🚧</div>
                         <h2 className="pt-4 pb-10 text-4xl font-black">UNDER CONSTRUCTION</h2>

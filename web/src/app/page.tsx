@@ -210,7 +210,7 @@ export default async function Home() {
                         <div>
                             <h3 className="mb-6 text-2xl font-bold text-slate-900">Active Area</h3>
                             <div className="space-y-4">
-                                <div className="relative mx-auto aspect-square h-full max-h-[600px]">
+                                <div className="relative mx-auto aspect-square h-full max-h-150">
                                     <div className="absolute h-[calc(100%*300/300)] w-[calc(100%*300/300)] rounded-sm border-2 bg-purple-500"></div>
                                     <div className="absolute h-[calc(100%*135/300)] w-[calc(100%*216/300)] rounded-sm border-2 bg-indigo-600"></div>
                                     <div className="absolute h-[calc(100%*100/300)] w-[calc(100%*180/300)] rounded-sm border-2 bg-teal-600"></div>
