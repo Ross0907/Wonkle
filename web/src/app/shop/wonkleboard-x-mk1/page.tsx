@@ -5,12 +5,12 @@ import type { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-    title: "Wonkleboard Lite mk.1",
+    title: "Wonkleboard X mk.1",
     description:
-        "Budget osu! tablet with 1000Hz polling rate, 200 lpmm resolution, and 15mm hover height.",
+        "High-performance osu! tablet with 8000Hz polling rate, 200 lpmm resolution, and 20mm hover height.",
 }
 
-export default async function WonkleboardLiteMk1() {
+export default async function WonkleboardXMk1() {
     return (
         <div className="w-full">
             <section className="border-b-4 pt-32 pb-16 md:pb-22">
@@ -19,7 +19,7 @@ export default async function WonkleboardLiteMk1() {
                         <h1 className="mb-8 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
                             Wonkleboard
                             <br />
-                            <span className="text-blue-600">Lite</span>{" "}
+                            <span className="text-blue-600">Pro</span>{" "}
                             <span className="text-3xl">mk.1</span>
                         </h1>
 

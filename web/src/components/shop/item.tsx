@@ -1,11 +1,14 @@
 "use client"
 
-import { Icon } from "@iconify/react"
+import { cn } from "@/lib/utils"
 import { OrbitControls, useTexture } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
+import { ArrowRight, ChevronsLeftRightEllipsis, Ruler } from "lucide-react"
 import Link from "next/link"
 import { NearestFilter } from "three"
 
+import { Button } from "../ui/button"
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card"
 import img from "./streamline-pixel--interface-essential-question-help-square.png"
 
 function Box() {
@@ -23,25 +26,29 @@ function Box() {
 }
 
 export default function ShopItem({
-    name,
+    category,
+    model,
+    rev,
+    nick,
     href,
-    price,
+    highlight,
     pollingRate,
     activeArea,
-    resolution,
-    hoverHeight,
+    price,
 }: {
-    name: string
+    category: string
+    model: string
+    rev: string
+    nick: string
     href: string
-    price: string
+    highlight: "pollingRate" | "activeArea" | "price"
     pollingRate: string
     activeArea: string
-    resolution: string
-    hoverHeight: string
+    price: string
 }) {
     return (
-        <div className="group relative overflow-hidden rounded-3xl bg-linear-to-br from-slate-50 to-white shadow-xl transition-all">
-            <div className="relative h-72 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-slate-50">
+        <Card className="bg-secondary-background h-135 w-96 gap-0 pt-0">
+            <div className="h-64 bg-linear-to-b from-pink-100 to-transparent">
                 <Canvas camera={{ position: [3, 3, 3], fov: 25 }}>
                     <ambientLight intensity={3} />
                     <OrbitControls
@@ -52,73 +59,54 @@ export default function ShopItem({
                     />
                     <Box />
                 </Canvas>
-
-                <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-white via-transparent to-transparent opacity-50" />
             </div>
 
-            <div className="p-8">
-                <div className="mb-6 flex items-start justify-between gap-4">
-                    <div>
-                        <h3 className="text-2xl font-bold text-slate-900 sm:text-3xl">{name}</h3>
-                    </div>
-                    <div className="text-right">
-                        <div className="text-3xl font-bold text-slate-900">${price}</div>
-                        <div className="text-xs text-slate-500">USD</div>
-                    </div>
-                </div>
+            <CardHeader className="pb-6">
+                <h3 className="text-2xl font-bold">
+                    {category} <span className="text-blue-500">{model}</span> {rev}
+                </h3>
+                <span className="text-slate-500" style={{ textDecorationSkipInk: "none" }}>
+                    {nick}
+                </span>
+            </CardHeader>
 
-                <div className="mb-6 grid grid-cols-2 gap-3 *:duration-100">
-                    <div className="rounded-xl bg-linear-to-br from-blue-50 to-blue-100/50 p-4 transition-colors hover:from-blue-100 hover:to-blue-200/50">
-                        <div className="mb-1 flex items-center gap-2">
-                            <Icon icon="mdi:speedometer" className="h-5 w-5 text-blue-600" />
-                            <span className="text-xs font-medium text-blue-900">Polling Rate</span>
-                        </div>
-                        <div className="text-xl font-bold text-blue-900">{pollingRate}</div>
-                    </div>
-
-                    <div className="rounded-xl bg-linear-to-br from-purple-50 to-purple-100/50 p-4 transition-colors hover:from-purple-100 hover:to-purple-200/50">
-                        <div className="mb-1 flex items-center gap-2">
-                            <Icon icon="mdi:resize" className="h-5 w-5 text-purple-600" />
-                            <span className="text-xs font-medium text-purple-900">Active Area</span>
-                        </div>
-                        <div className="text-xl font-bold text-purple-900">{activeArea}</div>
-                    </div>
-
-                    <div className="rounded-xl bg-linear-to-br from-green-50 to-green-100/50 p-4 transition-colors hover:from-green-100 hover:to-green-200/50">
-                        <div className="mb-1 flex items-center gap-2">
-                            <Icon icon="mdi:grid" className="h-5 w-5 text-green-600" />
-                            <span className="text-xs font-medium text-green-900">Resolution</span>
-                        </div>
-                        <div className="text-xl font-bold text-green-900">{resolution}</div>
-                    </div>
-
-                    <div className="rounded-xl bg-linear-to-br from-orange-50 to-orange-100/50 p-4 transition-colors hover:from-orange-100 hover:to-orange-200/50">
-                        <div className="mb-1 flex items-center gap-2">
-                            <Icon
-                                icon="mdi:arrow-expand-vertical"
-                                className="h-5 w-5 text-orange-600"
-                            />
-                            <span className="text-xs font-medium text-orange-900">
-                                Hover Height
-                            </span>
-                        </div>
-                        <div className="text-xl font-bold text-orange-900">{hoverHeight}</div>
-                    </div>
-                </div>
-
-                <Link
-                    href={href}
-                    className="group/btn relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-slate-900 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-50 hover:scale-[1.02] hover:bg-slate-800 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
+            <CardContent className="flex grow flex-col gap-3">
+                <div
+                    className={cn(
+                        "flex w-fit items-center gap-1 px-2",
+                        highlight === "pollingRate" && "bg-yellow-200",
+                    )}
                 >
-                    <span className="relative z-10">Learn more</span>
-                    <Icon
-                        icon="mdi:arrow-right"
-                        className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1"
-                    />
+                    <ChevronsLeftRightEllipsis size={20} className="mr-1" />
+                    <span className="text-xs font-medium">Polling Rate</span>
+                    <span className="font-bold">{pollingRate}</span>
+                </div>
 
-                    <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover/btn:translate-x-full" />
-                </Link>
-            </div>
-        </div>
+                <div
+                    className={cn(
+                        "flex w-fit items-center gap-1 px-2",
+                        highlight === "activeArea" && "bg-yellow-200",
+                    )}
+                >
+                    <Ruler size={20} className="mr-1" />
+                    <span className="text-xs font-medium">Active Area</span>
+                    <div className="font-bold">{activeArea}</div>
+                </div>
+            </CardContent>
+
+            <CardFooter className="flex items-end justify-between">
+                <div className={cn("px-2", highlight === "price" && "bg-yellow-200")}>
+                    <span className="text-3xl font-bold text-slate-900">{price}</span>
+                    <span className="text-xs text-slate-500">USD</span>
+                </div>
+
+                <Button asChild>
+                    <Link href={href}>
+                        Learn more
+                        <ArrowRight />
+                    </Link>
+                </Button>
+            </CardFooter>
+        </Card>
     )
 }
