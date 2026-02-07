@@ -13,25 +13,17 @@ jobs:
     name: Web CI
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      # https://github.com/pnpm/action-setup
-      - uses: pnpm/action-setup@v4
+      - uses: jdx/mise-action@v3
         with:
-          version: 10.23.0 # synced with devenv
+          experimental: true
 
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24.11.1 # synced with devenv
-          cache: pnpm
-          cache-dependency-path: web/pnpm-lock.yaml
+      - run: cd web && bun install
 
-      - run: cd web && pnpm install
-
-      - run: cd web && pnpm lint
+      - run: cd web && bun run lint
 
       - name: Create .env file
         run: cp ./web/.env.local.example ./web/.env.local
 
-      - run: cd web && pnpm build:frontend
+      - run: cd web && bun run build:frontend

@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "concurrently --names 'Frontend, Backend' -c green,blue 'pnpm dev:frontend' 'pnpm dev:backend'",
+        "dev": "concurrently --names 'Frontend, Backend' -c green,blue 'bun dev:frontend' 'bun dev:backend'",
         "dev:frontend": "next dev",
         "dev:backend": "convex dev",
         "build": "convex codegen && next build",
