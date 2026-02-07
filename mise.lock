@@ -13,6 +13,18 @@ backend = "core:bun"
 "platforms.windows-x64" = { checksum = "sha256:4c0a82866424e23d1bdaa9517307ec2f143ed513c15546dba0b859c6c55c47c7", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.8/bun-windows-x64.zip"}
 "platforms.windows-x64-baseline" = { checksum = "sha256:74f4dad7b4873ee70f63add9918400334e31acab9ba3fce9ef9906d96646e231", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.8/bun-windows-x64-baseline.zip"}
 
+[[tools."nix:gcc"]]
+version = "15.2.0"
+backend = "nix:gcc"
+
+[[tools."nix:probe-rs-tools"]]
+version = "0.31.0"
+backend = "nix:probe-rs-tools"
+
+[[tools."nix:usbutils"]]
+version = "018"
+backend = "nix:usbutils"
+
 [[tools.rust]]
 version = "1.93.0"
 backend = "core:rust"
