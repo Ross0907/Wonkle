@@ -16,6 +16,10 @@
 
 1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nixos.org/download/#download-nix)
    - [IDE integration](https://mise.jdx.dev/ide-integration.html)
+2. add target for tablet microprocessor
+   ```
+   rustup target add thumbv7em-none-eabihf
+   ```
 
 ## Commands
 

@@ -94,6 +94,7 @@
         "PWRCLK",
         "rgba",
         "rustflags",
+        "rustup",
         "rybbit",
         "serde",
         "shadcn",

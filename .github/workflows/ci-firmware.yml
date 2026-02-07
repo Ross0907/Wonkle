@@ -21,6 +21,8 @@ jobs:
         with:
           experimental: true
 
+      - run: rustup target add thumbv7em-none-eabihf
+
       - run: cd firmware && cargo check
 
       - run: cd firmware && cargo clippy -- -W clippy::pedantic
