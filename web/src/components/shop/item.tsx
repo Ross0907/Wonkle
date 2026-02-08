@@ -126,12 +126,15 @@ export default function ShopItem({ product }: { product: ProductID }) {
             <CardFooter className="flex items-end justify-between">
                 <div className={cn("px-2", highlight === "price" && "bg-yellow-200")}>
                     <span className="text-3xl font-bold text-slate-900">{price}</span>
-                    <span className="text-xs text-slate-500">USD</span>
+                    <span className="text-xs text-slate-600">USD</span>
                 </div>
 
                 <Button asChild>
                     <Link href={`/shop/${product}`} data-rybbit-event={`home-products-${product}`}>
                         Learn more
+                        <span className="sr-only">
+                            about {category} {model} {rev}
+                        </span>
                         <ArrowRight />
                     </Link>
                 </Button>
