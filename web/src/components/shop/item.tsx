@@ -11,6 +11,53 @@ import { Button } from "../ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card"
 import img from "./streamline-pixel--interface-essential-question-help-square.png"
 
+type ProductID = "wonkleboard-lite-mk1" | "wonkleboard-pro-mk1" | "wonkleboard-x-mk1"
+
+const data: Record<
+    ProductID,
+    {
+        category: string
+        model: string
+        rev: string
+        nick: string
+        highlight: "pollingRate" | "activeArea" | "price"
+        pollingRate: string
+        activeArea: string
+        price: string
+    }
+> = {
+    "wonkleboard-lite-mk1": {
+        category: "Wonkleboard",
+        model: "Lite",
+        rev: "mk.1",
+        nick: "cheap boi",
+        highlight: "price",
+        pollingRate: "1000Hz",
+        activeArea: "180 × 100 mm",
+        price: "147.27",
+    },
+    "wonkleboard-pro-mk1": {
+        category: "Wonkleboard",
+        model: "Pro",
+        rev: "mk.1",
+        nick: "quick boi",
+        highlight: "pollingRate",
+        pollingRate: "8000Hz",
+        activeArea: "180 × 100 mm",
+        price: "247.27",
+    },
+    "wonkleboard-x-mk1": {
+        category: "Wonkleboard",
+        model: "X",
+        rev: "mk.1",
+        nick: "big boi",
+        highlight: "activeArea",
+        pollingRate: "1000Hz",
+        activeArea: "300 × 300 mm",
+        price: "247.27",
+    },
+}
+
 function Box() {
     const texture = useTexture(img.src, (texture_) => {
         texture_.magFilter = NearestFilter
@@ -25,27 +72,9 @@ function Box() {
     )
 }
 
-export default function ShopItem({
-    category,
-    model,
-    rev,
-    nick,
-    href,
-    highlight,
-    pollingRate,
-    activeArea,
-    price,
-}: {
-    category: string
-    model: string
-    rev: string
-    nick: string
-    href: string
-    highlight: "pollingRate" | "activeArea" | "price"
-    pollingRate: string
-    activeArea: string
-    price: string
-}) {
+export default function ShopItem({ product }: { product: ProductID }) {
+    const { category, model, rev, nick, highlight, pollingRate, activeArea, price } = data[product]
+
     return (
         <Card className="h-135 w-96 gap-0 bg-secondary-background pt-0">
             <div className="h-64 bg-ease-in-to-b from-pink-100 to-transparent">
@@ -101,7 +130,7 @@ export default function ShopItem({
                 </div>
 
                 <Button asChild>
-                    <Link href={href}>
+                    <Link href={`/shop/${product}`} data-rybbit-event={`home-products-${product}`}>
                         Learn more
                         <ArrowRight />
                     </Link>

@@ -41,6 +41,7 @@ export default async function WonkleboardXMk1() {
                                         href="https://discord.com/invite/h27rwcBn73"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        data-rybbit-event="join-waiting-room-wonkleboard-x-mk1"
                                     >
                                         Join the waiting room
                                         <SiDiscord className="ml-2" />

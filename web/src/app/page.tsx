@@ -105,7 +105,7 @@ export default async function Home() {
                             "
                         >
                             <Button asChild>
-                                <a href="#products">
+                                <a href="#products" data-rybbit-event="home-hero-explore-products">
                                     Explore products
                                     <ArrowRight className="ml-2" />
                                 </a>
@@ -115,6 +115,7 @@ export default async function Home() {
                                     href="https://discord.com/invite/h27rwcBn73"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    data-rybbit-event="home-hero-join-community"
                                 >
                                     Join our Community
                                     <SiDiscord className="ml-2" />
@@ -435,39 +436,9 @@ export default async function Home() {
                           xl:flex-row
                         "
                     >
-                        <ShopItem
-                            category="Wonkleboard"
-                            model="Lite"
-                            rev="mk.1"
-                            nick="cheap boi"
-                            href="/shop/wonkleboard-lite-mk1"
-                            price="147.27"
-                            pollingRate="1000Hz"
-                            activeArea="180 × 100 mm"
-                            highlight="price"
-                        />
-                        <ShopItem
-                            category="Wonkleboard"
-                            model="Pro"
-                            rev="mk.1"
-                            nick="quick boi"
-                            href="/shop/wonkleboard-pro-mk1"
-                            price="247.27"
-                            pollingRate="8000Hz"
-                            activeArea="180 × 100 mm"
-                            highlight="pollingRate"
-                        />
-                        <ShopItem
-                            category="Wonkleboard"
-                            model="X"
-                            rev="mk.1"
-                            nick="big boi"
-                            href="/shop/wonkleboard-x-mk1"
-                            price="247.27"
-                            pollingRate="1000Hz"
-                            activeArea="300 × 300 mm"
-                            highlight="activeArea"
-                        />
+                        <ShopItem product="wonkleboard-lite-mk1" />
+                        <ShopItem product="wonkleboard-pro-mk1" />
+                        <ShopItem product="wonkleboard-x-mk1" />
                     </div>
                 </div>
             </section>

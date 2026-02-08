@@ -53,6 +53,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Discord"
+                                data-rybbit-event="footer-discord"
                             >
                                 <SiDiscord size={24} />
                             </a>
@@ -70,6 +71,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Open Collective"
+                                data-rybbit-event="footer-opencollective"
                             >
                                 <SiOpencollective size={24} />
                             </a>
@@ -87,6 +89,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="BlueSky"
+                                data-rybbit-event="footer-bluesky"
                             >
                                 <SiBluesky size={24} />
                             </a>
@@ -102,6 +105,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="GitHub"
+                                data-rybbit-event="footer-github"
                             >
                                 <SiGithub size={24} />
                             </a>
@@ -117,6 +121,7 @@ export default function Footer() {
                                 title="Send us an email"
                                 href="mailto:pompydev@proton.me"
                                 aria-label="Email"
+                                data-rybbit-event="footer-email"
                             >
                                 <SiProtonmail size={24} />
                             </a>
