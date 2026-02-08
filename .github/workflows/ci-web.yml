@@ -21,7 +21,7 @@ jobs:
         with:
           experimental: true
 
-      - run: cd web && bun install
+      - run: cd web && bun install --frozen-lockfile
 
       - run: cd web && bun run lint
 

@@ -21,6 +21,6 @@ jobs:
         with:
           experimental: true
 
-      - run: cd docs && bun install
+      - run: cd docs && bun install --frozen-lockfile
 
       - run: cd docs && bun run build
