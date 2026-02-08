@@ -47,8 +47,8 @@ export default function ShopItem({
     price: string
 }) {
     return (
-        <Card className="bg-secondary-background h-135 w-96 gap-0 pt-0">
-            <div className="bg-ease-in-to-b h-64 from-pink-100 to-transparent">
+        <Card className="h-135 w-96 gap-0 bg-secondary-background pt-0">
+            <div className="h-64 bg-ease-in-to-b from-pink-100 to-transparent">
                 <Canvas camera={{ position: [3, 3, 3], fov: 25 }}>
                     <ambientLight intensity={3} />
                     <OrbitControls

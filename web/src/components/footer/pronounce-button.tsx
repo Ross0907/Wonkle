@@ -12,7 +12,7 @@ export default function PronounceButton({ className, ...props }: React.Component
         <>
             <button
                 title="Hear pronunciation"
-                className={cn("cursor-pointer rounded px-2 py-1", className)}
+                className={cn("cursor-pointer rounded-sm px-2 py-1", className)}
                 onClick={() => audioRef.current?.play()}
                 {...props}
             >

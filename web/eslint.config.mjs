@@ -1,5 +1,6 @@
 import nextVitals from "eslint-config-next/core-web-vitals"
 import nextTypescript from "eslint-config-next/typescript"
+import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss"
 import compat from "eslint-plugin-compat"
 import { defineConfig } from "eslint/config"
 
@@ -18,15 +19,13 @@ export default defineConfig([
         ],
     },
     {
-        languageOptions: {
-            parserOptions: {
-                projectService: true,
-            },
-        },
-    },
-    {
+        extends: [eslintPluginBetterTailwindcss.configs.recommended],
         rules: {
-            "@typescript-eslint/no-deprecated": "warn",
+            "better-tailwindcss/enforce-consistent-line-wrapping": ["warn", { printWidth: 100 }],
+            "better-tailwindcss/no-unknown-classes": ["warn", { ignore: ["animate-fade-in"] }],
+        },
+        settings: {
+            "better-tailwindcss": { entryPoint: "src/app/globals.css" },
         },
     },
 ])

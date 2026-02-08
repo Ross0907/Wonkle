@@ -16,7 +16,13 @@ function A({
     return (
         <E
             className={cn(
-                "inline-flex items-center gap-1 font-semibold underline decoration-pink-600 decoration-2 underline-offset-2 transition-colors hover:text-pink-700 hover:decoration-pink-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-600",
+                `
+                  inline-flex items-center gap-1 font-semibold underline decoration-pink-600
+                  decoration-2 underline-offset-2 transition-colors
+                  hover:text-pink-700 hover:decoration-pink-700
+                  focus-visible:outline-2 focus-visible:outline-offset-4
+                  focus-visible:outline-pink-600
+                `,
                 className,
             )}
             {...props}

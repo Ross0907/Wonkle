@@ -14,9 +14,19 @@ export default function Footer() {
     return (
         <footer className="bg-white px-4 py-12">
             <div className="mx-auto max-w-6xl">
-                <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+                <div
+                    className="
+                      flex flex-col items-center justify-between gap-6
+                      md:flex-row
+                    "
+                >
                     {/* Brand and Attribution */}
-                    <div className="text-center md:text-left">
+                    <div
+                        className="
+                          text-center
+                          md:text-left
+                        "
+                    >
                         <p className="text-sm text-slate-600">
                             Wonkle • /ˈwɑːŋkəl/
                             <PronounceButton />
@@ -25,10 +35,17 @@ export default function Footer() {
                     </div>
 
                     {/* Social Links */}
-                    <div className="flex items-center gap-4 [&_svg]:size-6">
+                    <div
+                        className="
+                          flex items-center gap-4
+                          [&_svg]:size-6
+                        "
+                    >
                         <Button
                             asChild
-                            className="flex size-14 items-center justify-center bg-[#5865F2] text-white"
+                            className="
+                              flex size-14 items-center justify-center bg-[#5865F2] text-white
+                            "
                         >
                             <a
                                 title="Join our Discord community"
@@ -43,7 +60,9 @@ export default function Footer() {
 
                         <Button
                             asChild
-                            className="flex size-14 items-center justify-center bg-[#7FADF2] text-white"
+                            className="
+                              flex size-14 items-center justify-center bg-[#7FADF2] text-white
+                            "
                         >
                             <a
                                 title="Support us on Open Collective"
@@ -58,7 +77,9 @@ export default function Footer() {
 
                         <Button
                             asChild
-                            className="flex size-14 items-center justify-center bg-[#1185FE] text-white"
+                            className="
+                              flex size-14 items-center justify-center bg-[#1185FE] text-white
+                            "
                         >
                             <a
                                 title="Follow us on BlueSky"
@@ -88,7 +109,9 @@ export default function Footer() {
 
                         <Button
                             asChild
-                            className="flex size-14 items-center justify-center bg-[#6D4AFF] text-white"
+                            className="
+                              flex size-14 items-center justify-center bg-[#6D4AFF] text-white
+                            "
                         >
                             <a
                                 title="Send us an email"

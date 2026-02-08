@@ -6,7 +6,10 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
         <div
             data-slot="card"
             className={cn(
-                "rounded-base shadow-shadow border-border bg-background text-foreground font-base flex flex-col gap-6 border-2 py-6",
+                `
+                  flex flex-col gap-6 rounded-base border-2 border-border bg-background py-6
+                  font-base text-foreground shadow-shadow
+                `,
                 className,
             )}
             {...props}
@@ -19,7 +22,12 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
         <div
             data-slot="card-header"
             className={cn(
-                "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-[data-slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
+                `
+                  @container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start
+                  gap-1.5 px-6
+                  has-[data-slot=card-action]:grid-cols-[1fr_auto]
+                  [.border-b]:pb-6
+                `,
                 className,
             )}
             {...props}
@@ -31,7 +39,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
     return (
         <div
             data-slot="card-title"
-            className={cn("font-heading leading-none", className)}
+            className={cn("leading-none font-heading", className)}
             {...props}
         />
     )
@@ -41,7 +49,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
     return (
         <div
             data-slot="card-description"
-            className={cn("font-base text-sm", className)}
+            className={cn("text-sm font-base", className)}
             {...props}
         />
     )
@@ -68,7 +76,13 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
     return (
         <div
             data-slot="card-footer"
-            className={cn("flex items-center px-6 [.border-t]:pt-6", className)}
+            className={cn(
+                `
+                  flex items-center px-6
+                  [.border-t]:pt-6
+                `,
+                className,
+            )}
             {...props}
         />
     )

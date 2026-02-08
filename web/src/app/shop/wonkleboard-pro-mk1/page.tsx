@@ -13,10 +13,21 @@ export const metadata: Metadata = {
 export default async function WonkleboardProMk1() {
     return (
         <div className="w-full">
-            <section className="border-b-4 pt-32 pb-16 md:pb-22">
+            <section
+                className="
+                  border-b-4 pt-32 pb-16
+                  md:pb-22
+                "
+            >
                 <div className="mx-auto">
                     <div className="animate-fade-in text-center">
-                        <h1 className="mb-8 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+                        <h1
+                            className="
+                              mb-8 text-5xl font-bold tracking-tight
+                              sm:text-6xl
+                              md:text-7xl
+                            "
+                        >
                             Wonkleboard
                             <br />
                             <span className="text-blue-600">Pro</span>{" "}

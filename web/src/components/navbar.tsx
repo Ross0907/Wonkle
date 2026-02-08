@@ -17,16 +17,26 @@ export default function Navbar() {
     const pathname = usePathname()
 
     return (
-        <nav className="fixed top-0 z-50 w-full overflow-hidden border-b-4 backdrop-blur-xs transition-all">
+        <nav
+            className="
+              fixed top-0 z-50 w-full overflow-hidden border-b-4 backdrop-blur-xs transition-all
+            "
+        >
             <div className="w-full bg-white/80">
                 <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
                     <Link
                         href="/"
-                        className="group relative flex items-center gap-3 transition-opacity hover:opacity-80"
+                        className="
+                          group relative flex items-center gap-3 transition-opacity
+                          hover:opacity-80
+                        "
                         aria-label="Go to home"
                     >
                         <Image
-                            className="h-10 w-10 transition-transform select-none group-hover:scale-105"
+                            className="
+                              h-10 w-10 transition-transform select-none
+                              group-hover:scale-105
+                            "
                             src="/logo.png"
                             width={32}
                             height={32}
@@ -37,13 +47,22 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <ul className="hidden items-center gap-6 md:flex">
+                    <ul
+                        className="
+                          hidden items-center gap-6
+                          md:flex
+                        "
+                    >
                         {links.map(({ name, href }, i) => (
                             <li key={i}>
                                 <Link
                                     href={href}
                                     className={cn(
-                                        "font-medium text-slate-700 underline decoration-slate-300 decoration-2 underline-offset-2 transition-colors hover:text-slate-900 hover:decoration-blue-600",
+                                        `
+                                          font-medium text-slate-700 underline decoration-slate-300
+                                          decoration-2 underline-offset-2 transition-colors
+                                          hover:text-slate-900 hover:decoration-blue-600
+                                        `,
                                         pathname === href && "decoration-blue-600",
                                     )}
                                 >
@@ -69,7 +88,10 @@ export default function Navbar() {
 
             {/* Mobile Navigation */}
             <div
-                className="transition-all duration-300 md:hidden"
+                className="
+                  transition-all duration-300
+                  md:hidden
+                "
                 style={{
                     height: `${isMenuOpen ? 48 * links.length : 0}px`,
                 }}
@@ -81,7 +103,13 @@ export default function Navbar() {
                                 href={href}
                                 onClick={() => setIsMenuOpen(false)}
                                 className={cn(
-                                    "flex h-12 items-center justify-center bg-white/80 pl-4 font-medium text-slate-700 underline decoration-slate-300 decoration-2 underline-offset-2 transition-colors hover:bg-neutral-200/80 hover:text-slate-900 hover:decoration-blue-600",
+                                    `
+                                      flex h-12 items-center justify-center bg-white/80 pl-4
+                                      font-medium text-slate-700 underline decoration-slate-300
+                                      decoration-2 underline-offset-2 transition-colors
+                                      hover:bg-neutral-200/80 hover:text-slate-900
+                                      hover:decoration-blue-600
+                                    `,
                                     pathname === href && "decoration-blue-600",
                                 )}
                             >

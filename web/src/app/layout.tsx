@@ -28,7 +28,12 @@ export default function RootLayout({
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
             </head>
 
-            <body className={`${inter.className} min-h-screen bg-white text-slate-900 antialiased`}>
+            <body
+                className={`
+                  ${inter.className}
+                  min-h-screen bg-white text-slate-900 antialiased
+                `}
+            >
                 <ConvexClientProvider>
                     <div className="flex min-h-screen flex-col">
                         <Navbar />
