@@ -26,8 +26,7 @@ const buttonVariants = cva(
                 `,
                 reverse: `
                   border-2 border-border bg-main text-main-foreground
-                  hover:translate-x-reverseBoxShadowX hover:translate-y-reverseBoxShadowY
-                  hover:shadow-shadow
+                  hover:-translate-boxShadowX hover:shadow-shadow
                 `,
             },
             size: {

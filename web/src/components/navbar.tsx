@@ -34,7 +34,7 @@ export default function Navbar() {
                     >
                         <Image
                             className="
-                              h-10 w-10 transition-transform select-none
+                              size-10 transition-transform select-none
                               group-hover:scale-105
                             "
                             src="/logo.png"
