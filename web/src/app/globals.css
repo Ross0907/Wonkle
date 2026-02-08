@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "tw-easing-gradients";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -48,7 +48,7 @@ export default function ShopItem({
 }) {
     return (
         <Card className="bg-secondary-background h-135 w-96 gap-0 pt-0">
-            <div className="h-64 bg-linear-to-b from-pink-100 to-transparent">
+            <div className="bg-ease-in-to-b h-64 from-pink-100 to-transparent">
                 <Canvas camera={{ position: [3, 3, 3], fov: 25 }}>
                     <ambientLight intensity={3} />
                     <OrbitControls
