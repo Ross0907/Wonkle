@@ -2,23 +2,15 @@ import nextVitals from "eslint-config-next/core-web-vitals"
 import nextTypescript from "eslint-config-next/typescript"
 import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss"
 import compat from "eslint-plugin-compat"
-import { defineConfig } from "eslint/config"
+import { defineConfig, globalIgnores } from "eslint/config"
 
 export default defineConfig([
+    globalIgnores(["convex/_generated/**"]),
     ...nextVitals,
     ...nextTypescript,
-    compat.configs["flat/recommended"],
+    compat.configs["flat/recommended"], // https://github.com/amilajack/eslint-plugin-compat
     {
-        ignores: [
-            "node_modules/**",
-            ".next/**",
-            "out/**",
-            "build/**",
-            "next-env.d.ts",
-            "convex/_generated/**",
-        ],
-    },
-    {
+        // https://github.com/schoero/eslint-plugin-better-tailwindcss
         extends: [eslintPluginBetterTailwindcss.configs.recommended],
         rules: {
             "better-tailwindcss/enforce-consistent-line-wrapping": ["warn", { printWidth: 100 }],
