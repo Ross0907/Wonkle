@@ -7,12 +7,9 @@
         "esbenp.prettier-vscode",
         "fill-labs.dependi",
         "github.vscode-github-actions",
+        "hverlin.mise-vscode",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
-
-        // nix
-        "jnoortheen.nix-ide",
-        "mkhl.direnv",
 
         // JS/TS
         "bradlc.vscode-tailwindcss",

@@ -1,30 +1,23 @@
 import nextVitals from "eslint-config-next/core-web-vitals"
 import nextTypescript from "eslint-config-next/typescript"
-import { defineConfig } from "eslint/config"
+import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss"
+import compat from "eslint-plugin-compat"
+import { defineConfig, globalIgnores } from "eslint/config"
 
 export default defineConfig([
+    globalIgnores(["convex/_generated/**"]),
     ...nextVitals,
     ...nextTypescript,
+    compat.configs["flat/recommended"], // https://github.com/amilajack/eslint-plugin-compat
     {
-        ignores: [
-            "node_modules/**",
-            ".next/**",
-            "out/**",
-            "build/**",
-            "next-env.d.ts",
-            "convex/_generated/**",
-        ],
-    },
-    {
-        languageOptions: {
-            parserOptions: {
-                projectService: true,
-            },
-        },
-    },
-    {
+        // https://github.com/schoero/eslint-plugin-better-tailwindcss
+        extends: [eslintPluginBetterTailwindcss.configs.recommended],
         rules: {
-            "@typescript-eslint/no-deprecated": "warn",
+            "better-tailwindcss/enforce-consistent-line-wrapping": ["warn", { printWidth: 100 }],
+            "better-tailwindcss/no-unknown-classes": ["warn", { ignore: ["animate-fade-in"] }],
+        },
+        settings: {
+            "better-tailwindcss": { entryPoint: "src/app/globals.css" },
         },
     },
 ])

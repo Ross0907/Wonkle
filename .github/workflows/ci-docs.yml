@@ -13,20 +13,14 @@ jobs:
     name: Docs CI
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      # https://github.com/pnpm/action-setup
-      - uses: pnpm/action-setup@v4
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jdx/mise-action@v3
         with:
-          version: 10.23.0 # synced with devenv
+          experimental: true
 
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24.11.1 # synced with devenv
-          cache: pnpm
-          cache-dependency-path: docs/pnpm-lock.yaml
+      - run: cd docs && bun install --frozen-lockfile
 
-      - run: cd docs && pnpm install
-
-      - run: cd docs && pnpm build
+      - run: cd docs && bun run build

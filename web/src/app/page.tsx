@@ -32,10 +32,25 @@ function PollingRateScroll({ _key, hz }: { _key: string; hz: number }) {
                         marginRight: `${marginWidth / 2}px`,
                     }}
                     className={cn(
-                        "h-8 rounded bg-slate-300 hover:bg-slate-400",
-                        hz >= 200 && "bg-slate-400 hover:bg-slate-500",
-                        hz >= 1000 && "bg-blue-500 hover:bg-blue-800",
-                        hz >= 8000 && "bg-fuchsia-600 hover:bg-fuchsia-950",
+                        `
+                          h-8 rounded-sm bg-slate-300
+                          hover:bg-slate-400
+                        `,
+                        hz >= 200 &&
+                            `
+                              bg-slate-400
+                              hover:bg-slate-500
+                            `,
+                        hz >= 1000 &&
+                            `
+                              bg-blue-500
+                              hover:bg-blue-800
+                            `,
+                        hz >= 8000 &&
+                            `
+                              bg-fuchsia-600
+                              hover:bg-fuchsia-950
+                            `,
                     )}
                 />
             ))}
@@ -46,20 +61,51 @@ function PollingRateScroll({ _key, hz }: { _key: string; hz: number }) {
 export default async function Home() {
     return (
         <div className="w-full">
-            <section id="hero" className="border-b-4 pt-32 pb-16 md:pb-22">
+            <section
+                id="hero"
+                className="
+                  border-b-4 pt-32 pb-16
+                  md:pb-22
+                "
+            >
                 <div className="mx-auto max-w-6xl">
                     <div className="animate-fade-in text-center">
-                        <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl md:text-7xl">
-                            this one is made for <span className="text-blue-600 sm:block">You</span>
+                        <h1
+                            className="
+                              mb-6 text-5xl font-bold tracking-tight text-slate-900
+                              sm:text-6xl
+                              md:text-7xl
+                            "
+                        >
+                            this one is made for{" "}
+                            <span
+                                className="
+                                  text-blue-600
+                                  sm:block
+                                "
+                            >
+                                You
+                            </span>
                         </h1>
-                        <p className="mx-auto mb-12 max-w-2xl text-lg text-slate-600 sm:text-xl md:text-2xl">
+                        <p
+                            className="
+                              mx-auto mb-12 max-w-2xl text-lg text-slate-600
+                              sm:text-xl
+                              md:text-2xl
+                            "
+                        >
                             Tablets, keypads, pens and more. <br />
                             Made by gamers, for gamers.
                         </p>
 
-                        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                        <div
+                            className="
+                              flex flex-col items-center justify-center gap-4
+                              sm:flex-row
+                            "
+                        >
                             <Button asChild>
-                                <a href="#products">
+                                <a href="#products" data-rybbit-event="home-hero-explore-products">
                                     Explore products
                                     <ArrowRight className="ml-2" />
                                 </a>
@@ -69,6 +115,7 @@ export default async function Home() {
                                     href="https://discord.com/invite/h27rwcBn73"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    data-rybbit-event="home-hero-join-community"
                                 >
                                     Join our Community
                                     <SiDiscord className="ml-2" />
@@ -81,11 +128,21 @@ export default async function Home() {
 
             <section id="how-were-different" className="border-b-4 bg-teal-50 px-4 py-16">
                 <div className="mx-auto max-w-6xl">
-                    <h2 className="pb-16 text-center text-4xl font-bold tracking-tight sm:text-5xl">
+                    <h2
+                        className="
+                          pb-16 text-center text-4xl font-bold tracking-tight
+                          sm:text-5xl
+                        "
+                    >
                         How we&apos;re different
                     </h2>
 
-                    <div className="grid gap-8 md:grid-cols-3">
+                    <div
+                        className="
+                          grid gap-8
+                          md:grid-cols-3
+                        "
+                    >
                         <Card className="bg-secondary-background">
                             <CardHeader>
                                 <CardTitle>
@@ -141,7 +198,12 @@ export default async function Home() {
 
             <section id="how-were-better" className="border-b-4 px-4 py-16">
                 <div className="mx-auto max-w-6xl">
-                    <h2 className="pb-16 text-center text-4xl font-bold tracking-tight sm:text-5xl">
+                    <h2
+                        className="
+                          pb-16 text-center text-4xl font-bold tracking-tight
+                          sm:text-5xl
+                        "
+                    >
                         How we compare
                     </h2>
 
@@ -150,9 +212,22 @@ export default async function Home() {
                         <div>
                             <h3 className="mb-6 text-2xl font-bold">Polling Rate</h3>
                             <div className="relative space-y-4 py-2">
-                                <div className="absolute top-1/2 left-1/2 z-10 h-full w-0.5 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-black opacity-50">
-                                    <ChevronDown className="absolute -top-5 left-1/2 -translate-x-1/2 opacity-100" />
-                                    <ChevronUp className="absolute -bottom-5 left-1/2 -translate-x-1/2 opacity-100" />
+                                <div
+                                    className="
+                                      absolute top-1/2 left-1/2 z-10 h-full w-0.5 -translate-1/2
+                                      transform rounded-full bg-black opacity-50
+                                    "
+                                >
+                                    <ChevronDown
+                                        className="
+                                          absolute -top-5 left-1/2 -translate-x-1/2 opacity-100
+                                        "
+                                    />
+                                    <ChevronUp
+                                        className="
+                                          absolute -bottom-5 left-1/2 -translate-x-1/2 opacity-100
+                                        "
+                                    />
                                 </div>
                                 <div>
                                     <div className="mb-2 flex items-center justify-between">
@@ -206,11 +281,36 @@ export default async function Home() {
                             <h3 className="mb-6 text-2xl font-bold text-slate-900">Active Area</h3>
                             <div className="space-y-4">
                                 <div className="relative mx-auto aspect-square h-full max-h-150">
-                                    <div className="absolute h-[calc(100%*300/300)] w-[calc(100%*300/300)] rounded-sm border-2 bg-purple-500"></div>
-                                    <div className="absolute h-[calc(100%*135/300)] w-[calc(100%*216/300)] rounded-sm border-2 bg-indigo-600"></div>
-                                    <div className="absolute h-[calc(100%*100/300)] w-[calc(100%*180/300)] rounded-sm border-2 bg-teal-600"></div>
-                                    <div className="absolute h-[calc(100%*98/300)] w-[calc(100%*157/300)] rounded-sm border-2 bg-slate-400"></div>
-                                    <div className="absolute h-[calc(100%*95/300)] w-[calc(100%*152/300)] rounded-sm border-2 bg-slate-300"></div>
+                                    <div
+                                        className="
+                                          absolute h-[calc(100%*300/300)] w-[calc(100%*300/300)]
+                                          rounded-sm border-2 bg-purple-500
+                                        "
+                                    ></div>
+                                    <div
+                                        className="
+                                          absolute h-[calc(100%*135/300)] w-[calc(100%*216/300)]
+                                          rounded-sm border-2 bg-indigo-600
+                                        "
+                                    ></div>
+                                    <div
+                                        className="
+                                          absolute h-[calc(100%*100/300)] w-[calc(100%*180/300)]
+                                          rounded-sm border-2 bg-teal-600
+                                        "
+                                    ></div>
+                                    <div
+                                        className="
+                                          absolute h-[calc(100%*98/300)] w-[calc(100%*157/300)]
+                                          rounded-sm border-2 bg-slate-400
+                                        "
+                                    ></div>
+                                    <div
+                                        className="
+                                          absolute h-[calc(100%*95/300)] w-[calc(100%*152/300)]
+                                          rounded-sm border-2 bg-slate-300
+                                        "
+                                    ></div>
                                 </div>
 
                                 <div>
@@ -222,7 +322,11 @@ export default async function Home() {
                                             152 × 95 mm
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg border-2 bg-white">
+                                    <div
+                                        className="
+                                          h-8 w-full overflow-hidden rounded-lg border-2 bg-white
+                                        "
+                                    >
                                         <div
                                             className="h-full bg-slate-300"
                                             style={{ width: "calc(100% * 152 * 95 / 300 / 300)" }}
@@ -238,7 +342,11 @@ export default async function Home() {
                                             157 × 98 mm
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg border-2 bg-white">
+                                    <div
+                                        className="
+                                          h-8 w-full overflow-hidden rounded-lg border-2 bg-white
+                                        "
+                                    >
                                         <div
                                             className="h-full bg-slate-400"
                                             style={{ width: "calc(100% * 157 * 98 / 300 / 300)" }}
@@ -254,7 +362,11 @@ export default async function Home() {
                                             216 × 135 mm
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg border-2 bg-white">
+                                    <div
+                                        className="
+                                          h-8 w-full overflow-hidden rounded-lg border-2 bg-white
+                                        "
+                                    >
                                         <div
                                             className="h-full bg-teal-500"
                                             style={{ width: "calc(100% * 180 * 100 / 300 / 300)" }}
@@ -270,7 +382,11 @@ export default async function Home() {
                                             216 × 135 mm
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg border-2 bg-white">
+                                    <div
+                                        className="
+                                          h-8 w-full overflow-hidden rounded-lg border-2 bg-white
+                                        "
+                                    >
                                         <div
                                             className="h-full bg-indigo-500"
                                             style={{ width: "calc(100% * 216 * 135 / 300 / 300)" }}
@@ -286,7 +402,11 @@ export default async function Home() {
                                             300 × 300 mm
                                         </span>
                                     </div>
-                                    <div className="h-8 w-full overflow-hidden rounded-lg border-2 bg-white">
+                                    <div
+                                        className="
+                                          h-8 w-full overflow-hidden rounded-lg border-2 bg-white
+                                        "
+                                    >
                                         <div
                                             className="h-full bg-purple-500"
                                             style={{ width: "calc(100% * 300 * 300 / 300 / 300)" }}
@@ -301,44 +421,24 @@ export default async function Home() {
 
             <section id="products" className="border-b-4 bg-teal-50 px-4 py-16">
                 <div className="mx-auto max-w-6xl">
-                    <h2 className="pb-16 text-center text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+                    <h2
+                        className="
+                          pb-16 text-center text-4xl font-bold tracking-tight text-slate-900
+                          sm:text-5xl
+                        "
+                    >
                         Products
                     </h2>
 
-                    <div className="flex w-full flex-col items-center justify-center gap-8 xl:flex-row">
-                        <ShopItem
-                            category="Wonkleboard"
-                            model="Lite"
-                            rev="mk.1"
-                            nick="cheap boi"
-                            href="/shop/wonkleboard-lite-mk1"
-                            price="147.27"
-                            pollingRate="1000Hz"
-                            activeArea="180 × 100 mm"
-                            highlight="price"
-                        />
-                        <ShopItem
-                            category="Wonkleboard"
-                            model="Pro"
-                            rev="mk.1"
-                            nick="quick boi"
-                            href="/shop/wonkleboard-pro-mk1"
-                            price="247.27"
-                            pollingRate="8000Hz"
-                            activeArea="180 × 100 mm"
-                            highlight="pollingRate"
-                        />
-                        <ShopItem
-                            category="Wonkleboard"
-                            model="X"
-                            rev="mk.1"
-                            nick="big boi"
-                            href="/shop/wonkleboard-x-mk1"
-                            price="247.27"
-                            pollingRate="1000Hz"
-                            activeArea="300 × 300 mm"
-                            highlight="activeArea"
-                        />
+                    <div
+                        className="
+                          flex w-full flex-col items-center justify-center gap-8
+                          xl:flex-row
+                        "
+                    >
+                        <ShopItem product="wonkleboard-lite-mk1" />
+                        <ShopItem product="wonkleboard-pro-mk1" />
+                        <ShopItem product="wonkleboard-x-mk1" />
                     </div>
                 </div>
             </section>

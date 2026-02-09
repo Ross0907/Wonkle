@@ -8,5 +8,3 @@ firmware/target/
 /web/.next/
 /web/convex/_generated/
 /web/next-env.d.ts
-
-pnpm-lock.yaml

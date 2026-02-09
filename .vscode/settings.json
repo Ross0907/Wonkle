@@ -10,14 +10,6 @@
         "*.css": "tailwindcss"
     },
 
-    // Nix
-    "nix.formatterPath": "nixfmt",
-    "nix.enableLanguageServer": true,
-    "nix.serverPath": "nixd",
-    "[nix]": {
-        "editor.defaultFormatter": "jnoortheen.nix-ide"
-    },
-
     // Rust
     "rust-analyzer.check.allTargets": false,
     "rust-analyzer.check.targets": "thumbv7em-none-eabihf",
@@ -26,6 +18,9 @@
     },
 
     // web
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -68,19 +63,16 @@
     // Spelling
     "cSpell.words": [
         "BetaHuhn",
+        "bunx",
         "cachix",
         "cfgr",
         "CHIPSERIE",
         "clippy",
         "codegen",
         "defmt",
-        "devenv",
-        "DIRENV",
-        "direnvrc",
         "drei",
         "eabi",
         "eabihf",
-        "fenix",
         "gpioa",
         "GPIOB",
         "gpioc",
@@ -94,22 +86,13 @@
         "JLCPCB",
         "lpmm",
         "lsusb",
-        "Mablet",
         "microcontroller",
-        "nixd",
-        "nixfmt",
-        "nixos",
-        "nixpkgs",
         "oklch",
         "opencollective",
-        "oxalica",
         "pclk",
         "Phong",
-        "pkgs",
-        "pnpx",
         "pompy",
         "pompydev",
-        "pompypad",
         "protonmail",
         "PWRCLK",
         "rgba",
@@ -118,9 +101,7 @@
         "rybbit",
         "serde",
         "shadcn",
-        "supabase",
         "sysclk",
-        "taplo",
         "Tdefmt",
         "thumbv",
         "Tlink",
@@ -134,7 +115,6 @@
         "WCAG",
         "wonkle",
         "Wonkleboard",
-        "wonkleio",
-        "wooting"
+        "wonkleio"
     ]
 }
