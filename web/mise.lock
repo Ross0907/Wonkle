@@ -12,3 +12,18 @@ backend = "core:bun"
 "platforms.macos-x64-baseline" = { checksum = "sha256:a6e15821aa60795f541ce18fce16bca9f2a94e193068b77f6f33330f4d0a3ad5", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.9/bun-darwin-x64-baseline.zip"}
 "platforms.windows-x64" = { checksum = "sha256:f4c1cf3549f6af986dc6535c40b4785ff1a7e7805e59637ec450fc11adb0c874", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.9/bun-windows-x64.zip"}
 "platforms.windows-x64-baseline" = { checksum = "sha256:cc22962b3dcc51f279f13bf843675e052479e64a323f85eb29442066cf3942fe", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.9/bun-windows-x64-baseline.zip"}
+
+[[tools.node]]
+version = "25.6.0"
+backend = "core:node"
+"platforms.linux-arm64" = { checksum = "sha256:2e66dabc6cb170347058132d164acca15b61503a0f998346c5134ce3072e003b", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-arm64.tar.gz"}
+"platforms.linux-arm64-musl" = { checksum = "sha256:2e66dabc6cb170347058132d164acca15b61503a0f998346c5134ce3072e003b", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:a218fdaee14cb399f6b33925d4615a4046ba8db144f6e883c3b81e78937429eb", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz"}
+"platforms.linux-x64-baseline" = { checksum = "sha256:a218fdaee14cb399f6b33925d4615a4046ba8db144f6e883c3b81e78937429eb", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz"}
+"platforms.linux-x64-musl" = { checksum = "sha256:a218fdaee14cb399f6b33925d4615a4046ba8db144f6e883c3b81e78937429eb", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz"}
+"platforms.linux-x64-musl-baseline" = { checksum = "sha256:a218fdaee14cb399f6b33925d4615a4046ba8db144f6e883c3b81e78937429eb", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:5bfb537a913368152c5eba6aafe43ec834b23ee0ca4b96e5e18253937fe4103e", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-darwin-arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:b8bb25a7fd2fa5c638aa0fa9722ba351b5393ac5ca00aceea6578164b88e7761", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-darwin-x64.tar.gz"}
+"platforms.macos-x64-baseline" = { checksum = "sha256:b8bb25a7fd2fa5c638aa0fa9722ba351b5393ac5ca00aceea6578164b88e7761", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-darwin-x64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:133686ade5cd1e1686afcf2d688530fc35afef649ddf6a491e4705610727bd23", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-win-x64.zip"}
+"platforms.windows-x64-baseline" = { checksum = "sha256:133686ade5cd1e1686afcf2d688530fc35afef649ddf6a491e4705610727bd23", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-win-x64.zip"}

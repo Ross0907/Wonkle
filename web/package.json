@@ -4,9 +4,10 @@
     "private": true,
     "scripts": {
         "dev": "concurrently --names 'Frontend, Backend' -c green,blue 'bun dev:frontend' 'bun dev:backend'",
-        "dev:frontend": "next dev",
         "dev:backend": "convex dev",
-        "build": "convex codegen && next build",
+        "dev:frontend": "next dev",
+        "build": "bun run build:backend && bun run build:frontend",
+        "build:backend": "convex codegen",
         "build:frontend": "next build",
         "start": "next start",
         "lint": "eslint"

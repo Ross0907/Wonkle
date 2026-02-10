@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nix.dev/install-nix.html)
+1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html)
    - [IDE integration](https://mise.jdx.dev/ide-integration.html)
 2. Install dependencies:
    ```bash
@@ -16,6 +16,14 @@
 5. Start dev server:
    ```bash
    bun dev
+   ```
+6. (Optional) Install railpack
+   ```
+   mise use --global github:railwayapp/railpack@latest
+   ```
+7. (Optional) Test build locally
+   ```
+   railpack build .
    ```
 
 ## Web Platform Baseline
