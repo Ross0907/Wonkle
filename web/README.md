@@ -2,11 +2,11 @@
 
 ## Setup
 
-1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nixos.org/download/#download-nix)
+1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nix.dev/install-nix.html)
    - [IDE integration](https://mise.jdx.dev/ide-integration.html)
 2. Install dependencies:
    ```bash
-   bun install install
+   bun install
    ```
 3. Create `.env.local` from `.env.local.example`
 4. Setup Convex (only required once):
