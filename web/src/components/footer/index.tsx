@@ -1,3 +1,4 @@
+import { rybbit } from "@/lib/utils"
 import {
     SiBluesky,
     SiDiscord,
@@ -53,7 +54,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Discord"
-                                data-rybbit-event="footer-discord"
+                                {...rybbit({
+                                    "data-rybbit-event": "open-discord",
+                                    "data-rybbit-prop-location": "footer",
+                                })}
                             >
                                 <SiDiscord size={24} />
                             </a>
@@ -71,7 +75,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Open Collective"
-                                data-rybbit-event="footer-opencollective"
+                                {...rybbit({
+                                    "data-rybbit-event": "open-opencollective",
+                                    "data-rybbit-prop-location": "footer",
+                                })}
                             >
                                 <SiOpencollective size={24} />
                             </a>
@@ -89,7 +96,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="BlueSky"
-                                data-rybbit-event="footer-bluesky"
+                                {...rybbit({
+                                    "data-rybbit-event": "open-bluesky",
+                                    "data-rybbit-prop-location": "footer",
+                                })}
                             >
                                 <SiBluesky size={24} />
                             </a>
@@ -105,7 +115,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="GitHub"
-                                data-rybbit-event="footer-github"
+                                {...rybbit({
+                                    "data-rybbit-event": "open-github",
+                                    "data-rybbit-prop-location": "footer",
+                                })}
                             >
                                 <SiGithub size={24} />
                             </a>
@@ -121,7 +134,10 @@ export default function Footer() {
                                 title="Send us an email"
                                 href="mailto:pompydev@proton.me"
                                 aria-label="Email"
-                                data-rybbit-event="footer-email"
+                                {...rybbit({
+                                    "data-rybbit-event": "open-email",
+                                    "data-rybbit-prop-location": "footer",
+                                })}
                             >
                                 <SiProtonmail size={24} />
                             </a>

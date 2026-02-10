@@ -130,7 +130,7 @@ export default function ShopItem({ product }: { product: ProductID }) {
                 </div>
 
                 <Button asChild>
-                    <Link href={`/shop/${product}`} data-rybbit-event={`home-products-${product}`}>
+                    <Link href={`/shop/${product}`}>
                         Learn more
                         <span className="sr-only">
                             about {category} {model} {rev}
