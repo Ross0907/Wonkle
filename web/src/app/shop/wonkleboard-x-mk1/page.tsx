@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { rybbit } from "@/lib/utils"
 import mrBranWaiting from "@/res/mr_bean_waiting.avif"
 import { SiDiscord } from "@icons-pack/react-simple-icons"
 import type { Metadata } from "next"
@@ -41,7 +42,11 @@ export default async function WonkleboardXMk1() {
                                         href="https://discord.com/invite/h27rwcBn73"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        data-rybbit-event="join-waiting-room-wonkleboard-x-mk1"
+                                        {...rybbit({
+                                            "data-rybbit-event": "open-discord",
+                                            "data-rybbit-prop-location":
+                                                "waiting-room-wonkleboard-x-mk1",
+                                        })}
                                     >
                                         Join the waiting room
                                         <SiDiscord className="ml-2" />

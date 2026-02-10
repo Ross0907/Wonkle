@@ -1,28 +1,41 @@
 import "react"
 
 type RybbitEvent =
-    // Home Hero
-    | "home-hero-explore-products"
-    | "home-hero-join-community"
-    // Home Products
-    | "home-products-wonkleboard-lite-mk1"
-    | "home-products-wonkleboard-pro-mk1"
-    | "home-products-wonkleboard-x-mk1"
-    // Join waiting room
-    | "join-waiting-room-wonkleboard-lite-mk1"
-    | "join-waiting-room-wonkleboard-pro-mk1"
-    | "join-waiting-room-wonkleboard-x-mk1"
-    // Footer
-    | "footer-discord"
-    | "footer-opencollective"
-    | "footer-bluesky"
-    | "footer-github"
-    | "footer-email"
+    | {
+          "data-rybbit-event": "explore-products"
+          "data-rybbit-prop-location": "homepage hero"
+      }
+    | {
+          "data-rybbit-event": "open-discord"
+          "data-rybbit-prop-location":
+              | "homepage hero"
+              | "footer"
+              | "waiting-room-wonkleboard-lite-mk1"
+              | "waiting-room-wonkleboard-pro-mk1"
+              | "waiting-room-wonkleboard-x-mk1"
+      }
+    | {
+          "data-rybbit-event": "open-opencollective"
+          "data-rybbit-prop-location": "footer"
+      }
+    | {
+          "data-rybbit-event": "open-bluesky"
+          "data-rybbit-prop-location": "footer"
+      }
+    | {
+          "data-rybbit-event": "open-github"
+          "data-rybbit-prop-location": "footer"
+      }
+    | {
+          "data-rybbit-event": "open-email"
+          "data-rybbit-prop-location": "footer"
+      }
 
 declare module "react" {
     // https://rybbit.com/docs/track-events
     interface HTMLAttributes {
-        "data-rybbit-event"?: RybbitEvent
-        // We're not using data-rybbit-prop-* because it's not type-safe
+        // ❌❌❌ DO NOT USE THESE DIRECTLY. USE rybbit FUNCTION in src/lib/utils.ts INSTEAD ❌❌❌
+        "data-rybbit-event"?: RybbitEvent["data-rybbit-event"]
+        "data-rybbit-prop-location"?: RybbitEvent["data-rybbit-prop-location"]
     }
 }

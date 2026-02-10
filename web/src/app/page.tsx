@@ -2,7 +2,7 @@ import ShopItem from "@/components/shop/item"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { A } from "@/components/ui/link"
-import { cn } from "@/lib/utils"
+import { cn, rybbit } from "@/lib/utils"
 import { SiDiscord } from "@icons-pack/react-simple-icons"
 import { ArrowRight, ChevronDown, ChevronUp, GitMerge, PiggyBank, Rocket } from "lucide-react"
 import Marquee from "react-fast-marquee"
@@ -105,7 +105,13 @@ export default async function Home() {
                             "
                         >
                             <Button asChild>
-                                <a href="#products" data-rybbit-event="home-hero-explore-products">
+                                <a
+                                    href="#products"
+                                    {...rybbit({
+                                        "data-rybbit-event": "explore-products",
+                                        "data-rybbit-prop-location": "homepage hero",
+                                    })}
+                                >
                                     Explore products
                                     <ArrowRight className="ml-2" />
                                 </a>
@@ -115,7 +121,10 @@ export default async function Home() {
                                     href="https://discord.com/invite/h27rwcBn73"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    data-rybbit-event="home-hero-join-community"
+                                    {...rybbit({
+                                        "data-rybbit-event": "open-discord",
+                                        "data-rybbit-prop-location": "homepage hero",
+                                    })}
                                 >
                                     Join our Community
                                     <SiDiscord className="ml-2" />
