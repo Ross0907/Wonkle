@@ -14,7 +14,7 @@
 
 ## Setting up
 
-1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nixos.org/download/#download-nix)
+1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nix.dev/install-nix.html)
    - [IDE integration](https://mise.jdx.dev/ide-integration.html)
 
 ## Commands
