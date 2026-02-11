@@ -11,11 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - uses: cachix/install-nix-action@v31
-
       - uses: jdx/mise-action@v3
         with:
           experimental: true
+          working_directory: .
 
       - run: bun install --frozen-lockfile
 

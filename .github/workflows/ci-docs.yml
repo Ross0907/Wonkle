@@ -15,12 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - uses: cachix/install-nix-action@v31
-
       - uses: jdx/mise-action@v3
         with:
           experimental: true
+          working_directory: docs
 
-      - run: cd docs && bun install --frozen-lockfile
+      - run: bun install --frozen-lockfile
+        working-directory: docs
 
-      - run: cd docs && bun run build
+      - run: bun run build
+        working-directory: docs
