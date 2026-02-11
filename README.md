@@ -16,3 +16,7 @@ Source code, 3D models, schematics, etc. are available under
 to contribute and join us in our quest to make the best hardware for our fellow gamers.
 
 ## [Frequently Asked Questions](https://docs.wonkle.io/faq.html)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=wonkleio/wonkle&type=date&legend=top-left)](https://www.star-history.com/#wonkleio/wonkle&type=date&legend=top-left)
