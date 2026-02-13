@@ -1,8 +1,9 @@
 import type { NextConfig } from "next"
+import path from "path"
 
 const nextConfig: NextConfig = {
     transpilePackages: ["three"],
-    turbopack: { root: "." },
+    turbopack: { root: path.join(__dirname, ".") },
     async rewrites() {
         return [
             {
