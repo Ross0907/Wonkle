@@ -87,6 +87,7 @@
         "lpmm",
         "lsusb",
         "microcontroller",
+        "mrekk",
         "oklch",
         "opencollective",
         "pclk",
@@ -117,6 +118,7 @@
         "WCAG",
         "wonkle",
         "Wonkleboard",
-        "wonkleio"
+        "wonkleio",
+        "Wonklepad"
     ]
 }
