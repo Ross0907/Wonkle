@@ -1,3 +1,0 @@
-[tools]
-"npm:@trivago/prettier-plugin-sort-imports" = "6.0.2"
-"npm:prettier" = "3.8.1"

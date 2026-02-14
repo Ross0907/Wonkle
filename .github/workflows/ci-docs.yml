@@ -25,3 +25,6 @@ jobs:
 
       - run: bun run build
         working-directory: docs
+
+      - run: bunx prettier -l .
+        working-directory: docs
