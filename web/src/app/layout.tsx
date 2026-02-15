@@ -40,7 +40,11 @@ export default function RootLayout({
                     <Footer />
                 </ConvexClientProvider>
 
-                <Script src="/api/script.js" data-site-id="6" strategy="afterInteractive" />
+                <Script
+                    src="/api/script.js"
+                    data-site-id="d350c10f4fdd"
+                    strategy="afterInteractive"
+                />
             </body>
         </html>
     )

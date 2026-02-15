@@ -9,9 +9,9 @@ export default defineConfig({
         [
             "script",
             {
-                defer: "",
                 src: "https://rybbit.pompy.dev/api/script.js",
                 "data-site-id": "ac57acf9b33e",
+                defer: "",
             },
         ],
     ],
