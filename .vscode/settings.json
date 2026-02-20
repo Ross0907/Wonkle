@@ -87,6 +87,7 @@
         "lpmm",
         "lsusb",
         "microcontroller",
+        "mrekk",
         "oklch",
         "opencollective",
         "pclk",
@@ -95,6 +96,8 @@
         "pompydev",
         "protonmail",
         "PWRCLK",
+        "railpack",
+        "railwayapp",
         "rgba",
         "rustflags",
         "rustup",
@@ -115,6 +118,7 @@
         "WCAG",
         "wonkle",
         "Wonkleboard",
-        "wonkleio"
+        "wonkleio",
+        "Wonklepad"
     ]
 }

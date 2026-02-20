@@ -16,3 +16,11 @@
    ```bash
    bun dev
    ```
+4. (Optional) Install railpack
+   ```
+   mise use --global github:railwayapp/railpack@latest
+   ```
+5. (Optional) Test build locally
+   ```
+   railpack build .
+   ```

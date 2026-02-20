@@ -2,11 +2,11 @@
 
 ## Setup
 
-1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html) and [nix](https://nixos.org/download/#download-nix)
+1. Setup development environment with [mise](https://mise.jdx.dev/getting-started.html)
    - [IDE integration](https://mise.jdx.dev/ide-integration.html)
 2. Install dependencies:
    ```bash
-   bun install install
+   bun install
    ```
 3. Create `.env.local` from `.env.local.example`
 4. Setup Convex (only required once):
@@ -16,6 +16,14 @@
 5. Start dev server:
    ```bash
    bun dev
+   ```
+6. (Optional) Install railpack
+   ```
+   mise use --global github:railwayapp/railpack@latest
+   ```
+7. (Optional) Test build locally
+   ```
+   railpack build .
    ```
 
 ## Web Platform Baseline

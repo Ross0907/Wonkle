@@ -16,7 +16,7 @@ export default async function WonkleboardProMk1() {
         <div className="w-full">
             <section
                 className="
-                  border-b-4 pt-32 pb-16
+                  border-b-4 px-4 pt-32 pb-16
                   md:pb-22
                 "
             >
@@ -58,7 +58,7 @@ export default async function WonkleboardProMk1() {
                 </div>
             </section>
 
-            <section className="border-b-4 bg-teal-50 px-4 py-16">
+            <section className="bg-teal-50 px-4 py-16">
                 <div className="mx-auto flex h-240 max-w-6xl items-center justify-center">
                     <div className="text-center">
                         <div className="text-9xl">🚧</div>

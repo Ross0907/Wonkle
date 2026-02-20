@@ -15,17 +15,22 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - uses: cachix/install-nix-action@v31
-
       - uses: jdx/mise-action@v3
         with:
           experimental: true
+          working_directory: web
 
-      - run: cd web && bun install --frozen-lockfile
+      - run: bun install --frozen-lockfile
+        working-directory: web
 
-      - run: cd web && bun run lint
+      - run: bun run lint
+        working-directory: web
 
       - name: Create .env file
         run: cp ./web/.env.local.example ./web/.env.local
 
-      - run: cd web && bun run build:frontend
+      - run: bun run build:frontend
+        working-directory: web
+
+      - run: bunx prettier -l .
+        working-directory: web

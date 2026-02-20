@@ -64,7 +64,7 @@ export default async function Home() {
             <section
                 id="hero"
                 className="
-                  border-b-4 pt-32 pb-16
+                  border-b-4 px-4 pt-32 pb-16
                   md:pb-22
                 "
             >
@@ -428,7 +428,7 @@ export default async function Home() {
                 </div>
             </section>
 
-            <section id="products" className="border-b-4 bg-teal-50 px-4 py-16">
+            <section id="products" className="bg-teal-50 px-4 py-16">
                 <div className="mx-auto max-w-6xl">
                     <h2
                         className="

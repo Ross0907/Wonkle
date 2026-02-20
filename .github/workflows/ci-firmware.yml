@@ -20,6 +20,7 @@ jobs:
       - uses: jdx/mise-action@v3
         with:
           experimental: true
+          working_directory: firmware
 
       - run: rustup target add thumbv7em-none-eabihf
 
@@ -27,13 +28,18 @@ jobs:
 
       - run: rustup component add rustfmt
 
-      - run: cd firmware && cargo check
+      - run: cargo check
+        working-directory: firmware
 
-      - run: cd firmware && cargo clippy -- -W clippy::pedantic
+      - run: cargo clippy -- -W clippy::pedantic
+        working-directory: firmware
 
-      - run: cd firmware && cargo fmt --all -- --check
+      - run: cargo fmt --all -- --check
+        working-directory: firmware
 
       # todo: re-enable when there are stuff to test
-      # - run: cd firmware && cargo test
+      # - run: cargo test
+      #   working-directory: firmware
 
-      - run: cd firmware && cargo build --release
+      - run: cargo build --release
+        working-directory: firmware

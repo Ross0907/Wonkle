@@ -9,6 +9,7 @@ import { useState } from "react"
 
 const links: { name: string; href: string }[] = [
     { name: "Home", href: "/" },
+    { name: "Roadmap", href: "/roadmap" },
     { name: "Shop", href: "/shop" },
 ]
 

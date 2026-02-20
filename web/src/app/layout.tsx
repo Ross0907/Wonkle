@@ -31,18 +31,20 @@ export default function RootLayout({
             <body
                 className={`
                   ${inter.className}
-                  min-h-screen bg-white text-slate-900 antialiased
+                  flex min-h-screen flex-col bg-white text-slate-900 antialiased
                 `}
             >
                 <ConvexClientProvider>
-                    <div className="flex min-h-screen flex-col">
-                        <Navbar />
-                        <main className="grow">{children}</main>
-                        <Footer />
-                    </div>
+                    <Navbar />
+                    <main className="flex grow border-b-4">{children}</main>
+                    <Footer />
                 </ConvexClientProvider>
 
-                <Script src="/api/script.js" data-site-id="6" strategy="afterInteractive" />
+                <Script
+                    src="/api/script.js"
+                    data-site-id="d350c10f4fdd"
+                    strategy="afterInteractive"
+                />
             </body>
         </html>
     )
