@@ -20,3 +20,9 @@ to contribute and join us in our quest to make the best hardware for our fellow 
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=wonkleio/wonkle&type=date&legend=top-left)](https://www.star-history.com/#wonkleio/wonkle&type=date&legend=top-left)
+
+## Contributors
+
+Wonkle is built by people like you.
+
+[![profile pictures of contributors](https://contrib.rocks/image?repo=wonkleio/wonkle)](https://github.com/wonkleio/wonkle/graphs/contributors)
